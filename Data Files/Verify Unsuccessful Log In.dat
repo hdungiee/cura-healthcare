@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>Verify Unsuccessful Log In</name>
+   <tag></tag>
+   <connectionProperties/>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>984aea75-16e2-4f7b-bb25-93f818cf7517</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>InternalData</driver>
+   <data>null null no+user+name%2C+no+password</data>
+   <data>null ThisIsNotAPassword no+username%2C+right+password</data>
+   <data>John+Doe null right+username%2C+no+password</data>
+   <data>null wrong+password no+username%2C+wrong+password</data>
+   <data>wrong+username null wrong+username%2C+no+password</data>
+   <data>wrong+username wrong+password wrong+username%2C+wrong+password</data>
+   <data>%7E%21%40%23%24%25%5E%26*%28%29_%2B null special+character</data>
+   <data>null %7E%21%40%23%24%25%5E%26*%28%29_%2B special+character</data>
+   <data>%7E%21%40%23%24%25%5E%26*%28%29_%2B %7E%21%40%23%24%25%5E%26*%28%29_%2B special+character</data>
+   <internalDataColumns>
+      <columnIndex>0</columnIndex>
+      <name>username</name>
+      <size>9</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>1</columnIndex>
+      <name>password</name>
+      <size>9</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>2</columnIndex>
+      <name>note</name>
+      <size>9</size>
+   </internalDataColumns>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>Verify Successful Appointment</name>
+   <tag></tag>
+   <connectionProperties/>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>30d6e318-2756-4f2a-940b-8105d3aaca65</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>InternalData</driver>
+   <data>Tokyo+CURA+Healthcare+Center No Medicare 15%2F02%2F2023 Patient+showed+significant+improvement+during+the+program.</data>
+   <data>Tokyo+CURA+Healthcare+Center No Medicaid 07%2F06%2F2023 Readmitted+due+to+complications.</data>
+   <data>Tokyo+CURA+Healthcare+Center No None 29%2F03%2F2023 Patient%27s+condition+stabilized+after+the+program.</data>
+   <data>Tokyo+CURA+Healthcare+Center Yes Medicare 11%2F04%2F2023 Patient+showed+significant+improvement+during+the+program.</data>
+   <data>Tokyo+CURA+Healthcare+Center Yes Medicaid 08%2F01%2F2023 Readmitted+due+to+complications.</data>
+   <data>Tokyo+CURA+Healthcare+Center Yes None 22%2F07%2F2023 Patient%27s+condition+stabilized+after+the+program.</data>
+   <data>Hongkong+CURA+Healthcare+Center No Medicare 15%2F02%2F2023 Patient+showed+significant+improvement+during+the+program.</data>
+   <data>Hongkong+CURA+Healthcare+Center No Medicaid 07%2F06%2F2023 Patient+showed+significant+improvement+during+the+program.</data>
+   <data>Hongkong+CURA+Healthcare+Center No None 29%2F03%2F2023 Patient+showed+significant+improvement+during+the+program.</data>
+   <data>Hongkong+CURA+Healthcare+Center Yes Medicare 11%2F04%2F2023 Patient%27s+condition+stabilized+after+the+program.</data>
+   <data>Hongkong+CURA+Healthcare+Center Yes Medicaid 08%2F01%2F2023 Patient%27s+condition+stabilized+after+the+program.</data>
+   <data>Hongkong+CURA+Healthcare+Center Yes None 22%2F07%2F2023 Patient%27s+condition+stabilized+after+the+program.</data>
+   <data>Seoul+CURA+Healthcare+Center No Medicare 15%2F02%2F2023 Readmitted+due+to+complications.</data>
+   <data>Seoul+CURA+Healthcare+Center No Medicaid 07%2F06%2F2023 Readmitted+due+to+complications.</data>
+   <data>Seoul+CURA+Healthcare+Center No None 29%2F03%2F2023 Readmitted+due+to+complications.</data>
+   <data>Seoul+CURA+Healthcare+Center Yes Medicare 11%2F04%2F2023 Readmitted+due+to+complications.</data>
+   <data>Seoul+CURA+Healthcare+Center Yes Medicaid 08%2F01%2F2023 Readmitted+due+to+complications.</data>
+   <data>Seoul+CURA+Healthcare+Center Yes None 22%2F07%2F2023 Readmitted+due+to+complications.</data>
+   <internalDataColumns>
+      <columnIndex>0</columnIndex>
+      <name>facility</name>
+      <size>18</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>1</columnIndex>
+      <name>readmission</name>
+      <size>18</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>2</columnIndex>
+      <name>program</name>
+      <size>18</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>3</columnIndex>
+      <name>date</name>
+      <size>18</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>4</columnIndex>
+      <name>comment</name>
+      <size>18</size>
+   </internalDataColumns>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

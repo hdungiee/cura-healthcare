@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Successful log out from Profile page</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f47e7f1c-aae0-4d7a-b6bf-3c300ea6ce8f</testCaseGuid>
+</TestCaseEntity>

@@ -44,7 +44,10 @@ public class NavigationBar {
 
 	@Keyword
 	def logOut() {
+<<<<<<< HEAD
 		
+=======
+>>>>>>> branch 'master' of https://github.com/hdungiee/cura-healthcare.git
 		WebUI.click(findTestObject('Navigation Bar/Icon_Menu'))
 
 		WebUI.click(findTestObject('Navigation Bar/Button_Logout'))

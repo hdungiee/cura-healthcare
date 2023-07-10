@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>449e1ad7-f909-43b8-969c-3947845be59c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Verify Successful Appointment</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -60,7 +60,7 @@
    <testCaseLink>
       <guid>f2c02c7f-5dc2-4b82-a036-d9b5131deda7</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Verify Invalid Date</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>

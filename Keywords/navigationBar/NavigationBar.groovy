@@ -44,6 +44,7 @@ public class NavigationBar {
 
 	@Keyword
 	def logOut() {
+		
 		WebUI.click(findTestObject('Navigation Bar/Icon_Menu'))
 
 		WebUI.click(findTestObject('Navigation Bar/Button_Logout'))

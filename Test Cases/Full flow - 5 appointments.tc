@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Verify Correct Nav Bar On Every Page</name>
+   <name>Full flow - 5 appointments</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>cbdbbfdd-fef3-4d82-957f-4ac40b9afe89</testCaseGuid>
+   <testCaseGuid>0599c6e8-70a8-4645-aee2-2f129e90f8e2</testCaseGuid>
 </TestCaseEntity>

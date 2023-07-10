@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Navigation Bar</name>
+   <name>Full Flow</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,26 +10,19 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>dc3c5eab-13dd-4d5c-9a62-dc043a6a4691</testSuiteGuid>
+   <testSuiteGuid>69ba85d1-7414-4efd-81e1-a68f7c955e74</testSuiteGuid>
    <testCaseLink>
-      <guid>1c5f943f-95c4-4242-b076-f77d4c0b9ac2</guid>
+      <guid>543ffb31-cff4-442a-b548-9ae5b327d8b5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Verify Nav Bar is Visible And Clickable On All Pages</testCaseId>
+      <testCaseId>Test Cases/Full Flow - 1 appointment</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>35ca56ef-eace-47db-971e-280cea160187</guid>
+      <guid>e4b206fc-fb67-4f03-b9a7-e40219d818c2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Verify Correct Nav Bar On Home Page (Not Log In)</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>0b5c16b1-e9cd-4804-8c53-99123b5d37b6</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Verify Correct Nav Bar On Log In Page</testCaseId>
+      <testCaseId>Test Cases/Full flow - 5 appointments</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

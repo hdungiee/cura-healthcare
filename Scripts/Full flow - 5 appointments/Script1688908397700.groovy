@@ -16,26 +16,23 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.WebDriver as WebDriver
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.By as By
+import org.openqa.selenium.WebElement as WebElement
+import java.util.List as List
 
-WebUI.callTestCase(findTestCase('Verify Successful Log In'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Add 5 Appointments and Verify Correct History'), [:], FailureHandling.STOP_ON_FAILURE)
 
-for (def index : (1..5)) {
-    form_output = CustomKeywords.'makeAppointment.MakeAppointment.fillOutFormByRow'(index)
+WebUI.click(findTestObject('Navigation Bar/Icon_Menu'))
 
-    url = WebUI.getUrl()
+WebUI.click(findTestObject('Navigation Bar/Button_Logout'))
 
-    WebUI.verifyEqual(url, GlobalVariable.URL_summary)
+url = WebUI.getUrl()
 
-    WebUI.verifyTextPresent(form_output[0], false)
+WebUI.verifyEqual(url, GlobalVariable.URL_homepage)
 
-    WebUI.verifyTextPresent(form_output[1], false)
+WebUI.click(findTestObject('Page_Main page/Button_Make Appointment'))
 
-    WebUI.verifyTextPresent(form_output[2], false)
-
-    WebUI.verifyTextPresent(form_output[3], false)
-
-    WebUI.verifyTextPresent(form_output[4], false)
-
-    WebUI.click(findTestObject('Page_Summary/Button_Go to Homepage'))
-}
+WebUI.verifyTextPresent('Please login to make appointment.', false)
 

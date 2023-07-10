@@ -19,23 +19,31 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Verify Successful Log In'), [:], FailureHandling.STOP_ON_FAILURE)
 
-for (def index : (1..5)) {
-    form_output = CustomKeywords.'makeAppointment.MakeAppointment.fillOutFormByRow'(index)
+def form_output = CustomKeywords.'makeAppointment.MakeAppointment.fillOutFormByRow'(1)
 
-    url = WebUI.getUrl()
+url = WebUI.getUrl()
 
-    WebUI.verifyEqual(url, GlobalVariable.URL_summary)
+WebUI.verifyEqual(url, GlobalVariable.URL_summary)
 
-    WebUI.verifyTextPresent(form_output[0], false)
+WebUI.verifyTextPresent(form_output[0], false)
 
-    WebUI.verifyTextPresent(form_output[1], false)
+WebUI.verifyTextPresent(form_output[1], false)
 
-    WebUI.verifyTextPresent(form_output[2], false)
+WebUI.verifyTextPresent(form_output[2], false)
 
-    WebUI.verifyTextPresent(form_output[3], false)
+WebUI.verifyTextPresent(form_output[3], false)
 
-    WebUI.verifyTextPresent(form_output[4], false)
+WebUI.verifyTextPresent(form_output[4], false)
 
-    WebUI.click(findTestObject('Page_Summary/Button_Go to Homepage'))
-}
+WebUI.click(findTestObject('Navigation Bar/Icon_Menu'))
+
+WebUI.click(findTestObject('Navigation Bar/Button_Logout'))
+
+url = WebUI.getUrl()
+
+WebUI.verifyEqual(url, GlobalVariable.URL_homepage)
+
+WebUI.click(findTestObject('Page_Main page/Button_Make Appointment'))
+
+WebUI.verifyTextPresent('Please login to make appointment.', false)
 

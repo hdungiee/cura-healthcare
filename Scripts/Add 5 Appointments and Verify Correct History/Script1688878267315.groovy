@@ -27,6 +27,7 @@ WebUI.callTestCase(findTestCase('Verify Successful Log In'), [:], FailureHandlin
 def panel_info = []
 
 for (def index : (1..5)) {
+	
     form_output = CustomKeywords.'makeAppointment.MakeAppointment.fillOutFormByRow'(index)
 
     panel_info.add(form_output)
@@ -36,6 +37,9 @@ for (def index : (1..5)) {
     WebDriver driver = DriverFactory.getWebDriver()
 
     List headings = driver.findElements(By.className('panel-heading'))
+	
+	System.out.println(headings.size())
+	System.out.println(headings)
 
     List facilities = driver.findElements(By.id('facility'))
 	
@@ -45,37 +49,18 @@ for (def index : (1..5)) {
 	
 	List comments = driver.findElements(By.id('comment'))
 	
-	for (def i : (0..panel_info.size()-1)) {
+	for (def i : (0..(index-1))) {
 		
-		WebUI.verifyElementText(WebUI.convertWebElementToTestObject(headings[-i]), panel_info[i][3])
+		WebUI.verifyElementText(WebUI.convertWebElementToTestObject(headings[i]), panel_info[i][3])
 		
-		WebUI.verifyElementText(WebUI.convertWebElementToTestObject(facilities[-i]), panel_info[i][0])
+		WebUI.verifyElementText(WebUI.convertWebElementToTestObject(facilities[i]), panel_info[i][0])
 		
 //		WebUI.verifyElementText(WebUI.convertWebElementToTestObject(readmissions[-i]), panel_info[i][1])
 		
-		WebUI.verifyElementText(WebUI.convertWebElementToTestObject(programs[-i]), panel_info[i][2])
+		WebUI.verifyElementText(WebUI.convertWebElementToTestObject(programs[i]), panel_info[i][2])
 		
-		WebUI.verifyElementText(WebUI.convertWebElementToTestObject(comments[-i]), panel_info[i][4])
+		WebUI.verifyElementText(WebUI.convertWebElementToTestObject(comments[i]), panel_info[i][4])
 	}
-//
-//    for (def heading : headings) {
-//        for (def info : panel_info) {
-//            WebUI.verifyElementText(WebUI.convertWebElementToTestObject(heading), info[3])
-//        }
-//    }
-//    
-//    for (def body : bodies) {
-//		
-//        for (def info : panel_info) {
-//            WebUI.verifyElementText(WebUI.convertWebElementToTestObject(body), info[0])
-//
-//            WebUI.verifyElementText(WebUI.convertWebElementToTestObject(body), info[1])
-//
-//            WebUI.verifyElementText(WebUI.convertWebElementToTestObject(body), info[2])
-//
-//            WebUI.verifyElementText(WebUI.convertWebElementToTestObject(body), info[4])
-//        }
-//    }
 	
     
     CustomKeywords.'navigationBar.NavigationBar.goToHome'()

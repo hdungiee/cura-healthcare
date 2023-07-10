@@ -22,13 +22,10 @@ WebUI.callTestCase(findTestCase('Verify Successful Log In'), [:], FailureHandlin
 for (def index : (1..5)) {
     form_output = CustomKeywords.'makeAppointment.MakeAppointment.fillOutFormByRow'(index)
 
-<<<<<<< HEAD
     url = WebUI.getUrl()
 
     WebUI.verifyEqual(url, GlobalVariable.URL_summary)
 
-=======
->>>>>>> branch 'master' of https://github.com/hdungiee/cura-healthcare.git
     WebUI.verifyTextPresent(form_output[0], false)
 
     WebUI.verifyTextPresent(form_output[1], false)

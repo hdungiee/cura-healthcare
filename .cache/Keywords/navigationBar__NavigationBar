@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "keywordFileContentHash": "DC7DAE81D641C4A4B96C9604EF4FDDAC",
-=======
-  "keywordFileContentHash": "B5924C0052A3062D0C4F225A1E416941",
->>>>>>> branch 'master' of https://github.com/hdungiee/cura-healthcare.git
   "keywordClasses": [
     {
       "name": "navigationBar.NavigationBar",

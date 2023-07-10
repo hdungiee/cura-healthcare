@@ -14,7 +14,6 @@
    <testCaseLink>
       <guid>449e1ad7-f909-43b8-969c-3947845be59c</guid>
       <isReuseDriver>false</isReuseDriver>
-<<<<<<< HEAD
       <isRun>false</isRun>
       <testCaseId>Test Cases/Verify Successful Appointment</testCaseId>
       <testDataLink>
@@ -62,55 +61,6 @@
       <guid>f2c02c7f-5dc2-4b82-a036-d9b5131deda7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-=======
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Verify Successful Appointment</testCaseId>
-      <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>1e619c0c-a6c2-404f-b1ae-751353bb6e0b</id>
-         <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
-         </iterationEntity>
-         <testDataId>Data Files/Verify Successful Appointment</testDataId>
-      </testDataLink>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId>1e619c0c-a6c2-404f-b1ae-751353bb6e0b</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>readmission</value>
-         <variableId>d6a8bd30-68ec-4d57-9c31-3cbbcd39a6e3</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>1e619c0c-a6c2-404f-b1ae-751353bb6e0b</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>facility</value>
-         <variableId>e9fc2e64-994b-4835-88de-7fba372a6327</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>1e619c0c-a6c2-404f-b1ae-751353bb6e0b</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>date</value>
-         <variableId>4b9f64cc-1152-4daf-89a1-5b34c2476b29</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>1e619c0c-a6c2-404f-b1ae-751353bb6e0b</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>comment</value>
-         <variableId>13414fd6-5afe-48f8-befa-e1349f0e16e2</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>1e619c0c-a6c2-404f-b1ae-751353bb6e0b</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>program</value>
-         <variableId>3b25829f-20cc-4dfa-9c05-31b21517dfef</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>f2c02c7f-5dc2-4b82-a036-d9b5131deda7</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
->>>>>>> branch 'master' of https://github.com/hdungiee/cura-healthcare.git
       <testCaseId>Test Cases/Verify Invalid Date</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>

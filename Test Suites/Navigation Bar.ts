@@ -5,6 +5,7 @@
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
+<<<<<<< HEAD
    <numberOfRerun>3</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
@@ -32,4 +33,12 @@
       <testCaseId>Test Cases/Verify Correct Nav Bar On Log In Page</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+=======
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
+   <testSuiteGuid>dc3c5eab-13dd-4d5c-9a62-dc043a6a4691</testSuiteGuid>
+>>>>>>> branch 'master' of https://github.com/hdungiee/cura-healthcare.git
 </TestSuiteEntity>

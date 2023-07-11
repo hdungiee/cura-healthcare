@@ -1,0 +1,14 @@
+{
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Page_log in page/Button_Log in",
+      "brokenLocator": "",
+      "brokenLocatorMethod": "CSS",
+      "proposedLocator": "#btn-login",
+      "proposedLocatorMethod": "CSS",
+      "recoveryMethod": "CSS",
+      "pathToScreenshot": "Reports/20230711_174245/Edited/20230711_174245/Object Repository/Page_log in page/Button_Log in_CSS.png"
+    }
+  ]
+}

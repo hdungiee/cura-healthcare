@@ -1,0 +1,18 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Edited,Chrome 114.0.0.0,,,2023-07-11 15:28:54,2023-07-11 15:31:56,3m - 2.356s,FAILED
+,,,,,,,
+Test Cases/Verify user can log in with valid credentiasl,Chrome 114.0.0.0,,,2023-07-11 15:30:05,2023-07-11 15:30:27,21.823s,FAILED
+"openBrowser("""")",Chrome 114.0.0.0,,,2023-07-11 15:30:05,2023-07-11 15:30:10,5.299s,PASSED
+navigateToUrl(URL_homepage),Chrome 114.0.0.0,,,2023-07-11 15:30:10,2023-07-11 15:30:14,3.940s,PASSED
+"click(findTestObject(""Page_Main page/Button_Make Appointment""))",Chrome 114.0.0.0,,,2023-07-11 15:30:14,2023-07-11 15:30:18,3.520s,PASSED
+"logIn.LogIn.logIn(""John Doe"", ""ThisIsNotAPassword"")",Chrome 114.0.0.0,,,2023-07-11 15:30:18,2023-07-11 15:30:27,9.029s,FAILED
+,,,,,,,
+Test Cases/Verify user can log out using nav bar,Chrome 114.0.0.0,,,2023-07-11 15:30:46,2023-07-11 15:30:55,9.374s,FAILED
+"openBrowser("""")",Chrome 114.0.0.0,,,2023-07-11 15:30:46,2023-07-11 15:30:51,5.334s,PASSED
+navigateToUrl(URL_homepage),Chrome 114.0.0.0,,,2023-07-11 15:30:51,2023-07-11 15:30:55,3.746s,PASSED
+"click(findTestObject(""Page_Main page/Button_Make Appointment""))",Chrome 114.0.0.0,,,2023-07-11 15:30:55,2023-07-11 15:30:55,0.269s,FAILED
+,,,,,,,
+Test Cases/Verify user can log out using profile page,Chrome 114.0.0.0,,,2023-07-11 15:31:47,2023-07-11 15:31:56,9.486s,FAILED
+"openBrowser("""")",Chrome 114.0.0.0,,,2023-07-11 15:31:47,2023-07-11 15:31:52,5.193s,PASSED
+navigateToUrl(URL_homepage),Chrome 114.0.0.0,,,2023-07-11 15:31:52,2023-07-11 15:31:56,3.704s,PASSED
+"click(findTestObject(""Page_Main page/Button_Make Appointment""))",Chrome 114.0.0.0,,,2023-07-11 15:31:56,2023-07-11 15:31:56,0.492s,FAILED

@@ -1,0 +1,99 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Edited,Chrome 114.0.0.0,,,2023-07-11 17:20:50,2023-07-11 17:34:45,13m - 54.989s,FAILED
+,,,,,,,
+Test Cases/Verify user can log in with valid credentiasl,Chrome 114.0.0.0,,,2023-07-11 17:20:51,2023-07-11 17:21:42,51.257s,PASSED
+"openBrowser("""")",Chrome 114.0.0.0,,,2023-07-11 17:20:51,2023-07-11 17:20:58,6.983s,PASSED
+navigateToUrl(URL_homepage),Chrome 114.0.0.0,,,2023-07-11 17:20:58,2023-07-11 17:21:01,3.319s,PASSED
+"click(findTestObject(""Page_Main page/Button_Make Appointment""))",Chrome 114.0.0.0,,,2023-07-11 17:21:01,2023-07-11 17:21:03,1.568s,PASSED
+"logIn.LogIn.logIn(""John Doe"", ""ThisIsNotAPassword"")",Chrome 114.0.0.0,,,2023-07-11 17:21:03,2023-07-11 17:21:40,36.888s,PASSED
+"verifyEqual(getUrl(), URL_appointment)",Chrome 114.0.0.0,,,2023-07-11 17:21:40,2023-07-11 17:21:40,0.054s,PASSED
+"verifyElementVisible(findTestObject(""Page_Make Appointment/Dropdown_Facility""))",Chrome 114.0.0.0,,,2023-07-11 17:21:40,2023-07-11 17:21:42,1.995s,PASSED
+closeBrowser(),Chrome 114.0.0.0,,,2023-07-11 17:21:42,2023-07-11 17:21:42,0.100s,PASSED
+,,,,,,,
+Test Cases/Verify user can log out using nav bar,Chrome 114.0.0.0,,,2023-07-11 17:21:42,2023-07-11 17:22:44,1m - 2.012s,PASSED
+"openBrowser("""")",Chrome 114.0.0.0,,,2023-07-11 17:21:42,2023-07-11 17:21:47,4.751s,PASSED
+navigateToUrl(URL_homepage),Chrome 114.0.0.0,,,2023-07-11 17:21:47,2023-07-11 17:21:50,3.191s,PASSED
+"click(findTestObject(""Page_Main page/Button_Make Appointment""))",Chrome 114.0.0.0,,,2023-07-11 17:21:50,2023-07-11 17:21:53,2.694s,PASSED
+"logIn.LogIn.logIn(""John Doe"", ""ThisIsNotAPassword"")",Chrome 114.0.0.0,,,2023-07-11 17:21:53,2023-07-11 17:22:34,41.311s,PASSED
+"click(findTestObject(""Navigation Bar/Icon_Menu""))",Chrome 114.0.0.0,,,2023-07-11 17:22:34,2023-07-11 17:22:36,1.834s,PASSED
+"click(findTestObject(""Navigation Bar/Buttons"", [""index"":""5""]))",Chrome 114.0.0.0,,,2023-07-11 17:22:36,2023-07-11 17:22:39,2.603s,PASSED
+url = getUrl(),Chrome 114.0.0.0,,,2023-07-11 17:22:39,2023-07-11 17:22:39,0.013s,PASSED
+"verifyEqual(url, URL_homepage)",Chrome 114.0.0.0,,,2023-07-11 17:22:39,2023-07-11 17:22:39,0.003s,PASSED
+"click(findTestObject(""Page_Main page/Button_Make Appointment""))",Chrome 114.0.0.0,,,2023-07-11 17:22:39,2023-07-11 17:22:41,2.788s,PASSED
+"verifyTextPresent(""Please login to make appointment."", false)",Chrome 114.0.0.0,,,2023-07-11 17:22:41,2023-07-11 17:22:44,2.427s,PASSED
+closeBrowser(),Chrome 114.0.0.0,,,2023-07-11 17:22:44,2023-07-11 17:22:44,0.202s,PASSED
+,,,,,,,
+Test Cases/Verify user can log out using profile page,Chrome 114.0.0.0,,,2023-07-11 17:22:44,2023-07-11 17:23:45,1m - 1.510s,PASSED
+"openBrowser("""")",Chrome 114.0.0.0,,,2023-07-11 17:22:44,2023-07-11 17:22:49,4.538s,PASSED
+navigateToUrl(URL_homepage),Chrome 114.0.0.0,,,2023-07-11 17:22:49,2023-07-11 17:22:52,3.186s,PASSED
+"click(findTestObject(""Page_Main page/Button_Make Appointment""))",Chrome 114.0.0.0,,,2023-07-11 17:22:52,2023-07-11 17:22:54,2.022s,PASSED
+"logIn.LogIn.logIn(""John Doe"", ""ThisIsNotAPassword"")",Chrome 114.0.0.0,,,2023-07-11 17:22:54,2023-07-11 17:23:35,41.437s,PASSED
+"click(findTestObject(""Navigation Bar/Icon_Menu""))",Chrome 114.0.0.0,,,2023-07-11 17:23:35,2023-07-11 17:23:37,1.541s,PASSED
+"click(findTestObject(""Navigation Bar/Buttons"", [""index"":""4""]))",Chrome 114.0.0.0,,,2023-07-11 17:23:37,2023-07-11 17:23:39,2.201s,PASSED
+"click(findTestObject(""Page_Profile/Button_Log out""))",Chrome 114.0.0.0,,,2023-07-11 17:23:39,2023-07-11 17:23:41,2.369s,PASSED
+url = getUrl(),Chrome 114.0.0.0,,,2023-07-11 17:23:41,2023-07-11 17:23:42,0.011s,PASSED
+"verifyEqual(url, URL_homepage)",Chrome 114.0.0.0,,,2023-07-11 17:23:42,2023-07-11 17:23:42,0.005s,PASSED
+"click(findTestObject(""Page_Main page/Button_Make Appointment""))",Chrome 114.0.0.0,,,2023-07-11 17:23:42,2023-07-11 17:23:43,1.835s,PASSED
+"verifyTextPresent(""Please login to make appointment."", false)",Chrome 114.0.0.0,,,2023-07-11 17:23:43,2023-07-11 17:23:45,2.043s,PASSED
+closeBrowser(),Chrome 114.0.0.0,,,2023-07-11 17:23:45,2023-07-11 17:23:45,0.083s,PASSED
+,,,,,,,
+Test Cases/Verify user can book an appointment successfully,Chrome 114.0.0.0,,,2023-07-11 17:26:44,2023-07-11 17:27:47,1m - 3.393s,FAILED
+"openBrowser("""")",Chrome 114.0.0.0,,,2023-07-11 17:26:44,2023-07-11 17:26:48,4.578s,PASSED
+navigateToUrl(URL_homepage),Chrome 114.0.0.0,,,2023-07-11 17:26:48,2023-07-11 17:26:51,3.149s,PASSED
+"click(findTestObject(""Page_Main page/Button_Make Appointment""))",Chrome 114.0.0.0,,,2023-07-11 17:26:51,2023-07-11 17:26:54,2.397s,PASSED
+"logIn.LogIn.logIn(""John Doe"", ""ThisIsNotAPassword"")",Chrome 114.0.0.0,,,2023-07-11 17:26:54,2023-07-11 17:27:37,43.432s,PASSED
+"form_output = makeAppointment.MakeAppointment.fillOutForm(facility, readmission, program, date, comment)",Chrome 114.0.0.0,Fill out form,,2023-07-11 17:27:37,2023-07-11 17:27:47,9.669s,PASSED
+url = getUrl(),Chrome 114.0.0.0,,,2023-07-11 17:27:47,2023-07-11 17:27:47,0.008s,PASSED
+"verifyEqual(url, URL_summary)",Chrome 114.0.0.0,Verify correct URL and summary information,,2023-07-11 17:27:47,2023-07-11 17:27:47,0.010s,FAILED
+,,,,,,,
+Test Cases/Verify user cannot book an appointment with invalid dates,Chrome 114.0.0.0,,,2023-07-11 17:31:41,2023-07-11 17:32:53,1m - 11.600s,FAILED
+"openBrowser("""")",Chrome 114.0.0.0,,,2023-07-11 17:31:41,2023-07-11 17:31:46,4.750s,PASSED
+navigateToUrl(URL_homepage),Chrome 114.0.0.0,,,2023-07-11 17:31:46,2023-07-11 17:31:49,3.154s,PASSED
+"click(findTestObject(""Page_Main page/Button_Make Appointment""))",Chrome 114.0.0.0,,,2023-07-11 17:31:49,2023-07-11 17:31:52,2.523s,PASSED
+"logIn.LogIn.logIn(""John Doe"", ""ThisIsNotAPassword"")",Chrome 114.0.0.0,,,2023-07-11 17:31:52,2023-07-11 17:32:35,43.242s,PASSED
+"makeAppointment.MakeAppointment.fillOutForm("""", """", """", """", """")",Chrome 114.0.0.0,Case 1: empty date,,2023-07-11 17:32:35,2023-07-11 17:32:45,9.716s,PASSED
+"verifyEqual(getUrl(), URL_appointment)",Chrome 114.0.0.0,Verify cannot book appointment,,2023-07-11 17:32:45,2023-07-11 17:32:45,0.009s,PASSED
+"click(findTestObject(""Page_Main page/Button_Make Appointment""))",Chrome 114.0.0.0,Go back to appointment page,,2023-07-11 17:32:45,2023-07-11 17:32:47,2.003s,PASSED
+"makeAppointment.MakeAppointment.fillOutForm("""", """", """", ""abcdefjdgeh"", """")",Chrome 114.0.0.0,Case 2: string date,,2023-07-11 17:32:47,2023-07-11 17:32:53,6.174s,PASSED
+"verifyEqual(getUrl(), URL_appointment)",Chrome 114.0.0.0,Verify cannot book appointment,,2023-07-11 17:32:53,2023-07-11 17:32:53,0.010s,FAILED
+,,,,,,,
+Test Cases/Verify user can view correct history page after book appointments,Chrome 114.0.0.0,,,2023-07-11 17:32:53,2023-07-11 17:34:45,1m - 52.250s,PASSED
+"openBrowser("""")",Chrome 114.0.0.0,,,2023-07-11 17:32:53,2023-07-11 17:32:58,4.632s,PASSED
+navigateToUrl(URL_homepage),Chrome 114.0.0.0,,,2023-07-11 17:32:58,2023-07-11 17:33:01,3.159s,PASSED
+"click(findTestObject(""Page_Main page/Button_Make Appointment""))",Chrome 114.0.0.0,,,2023-07-11 17:33:01,2023-07-11 17:33:03,1.504s,PASSED
+"logIn.LogIn.logIn(""John Doe"", ""ThisIsNotAPassword"")",Chrome 114.0.0.0,,,2023-07-11 17:33:03,2023-07-11 17:33:44,41.573s,PASSED
+facility_list = [],Chrome 114.0.0.0,,,2023-07-11 17:33:44,2023-07-11 17:33:44,0.000s,PASSED
+readmission_list = [],Chrome 114.0.0.0,,,2023-07-11 17:33:44,2023-07-11 17:33:44,0.001s,PASSED
+program_list = [],Chrome 114.0.0.0,,,2023-07-11 17:33:44,2023-07-11 17:33:44,0.002s,PASSED
+dates_list = [],Chrome 114.0.0.0,,,2023-07-11 17:33:44,2023-07-11 17:33:44,0.001s,PASSED
+comment_list = [],Chrome 114.0.0.0,,,2023-07-11 17:33:44,2023-07-11 17:33:44,0.001s,PASSED
+"form_output = makeAppointment.MakeAppointment.fillOutForm(""Seoul CURA Healthcare Center"", ""No"", ""None"", ""08/08/2023"", """")",Chrome 114.0.0.0,Fill out form,,2023-07-11 17:33:44,2023-07-11 17:34:04,19.728s,PASSED
+facility_list.add(form_output[0]),Chrome 114.0.0.0,,,2023-07-11 17:34:04,2023-07-11 17:34:04,0.007s,PASSED
+readmission_list.add(form_output[1]),Chrome 114.0.0.0,,,2023-07-11 17:34:04,2023-07-11 17:34:04,0.001s,PASSED
+program_list.add(form_output[2]),Chrome 114.0.0.0,,,2023-07-11 17:34:04,2023-07-11 17:34:04,0.000s,PASSED
+dates_list.add(form_output[3]),Chrome 114.0.0.0,,,2023-07-11 17:34:04,2023-07-11 17:34:04,0.000s,PASSED
+comment_list.add(form_output[4]),Chrome 114.0.0.0,,,2023-07-11 17:34:04,2023-07-11 17:34:04,0.000s,PASSED
+"click(findTestObject(""Page_Summary/Button_Go to Homepage""))",Chrome 114.0.0.0,,,2023-07-11 17:34:04,2023-07-11 17:34:06,2.458s,PASSED
+"form_output = makeAppointment.MakeAppointment.fillOutForm(""Seoul CURA Healthcare Center"", ""No"", """", ""08/09/2024"", """")",Chrome 114.0.0.0,Fill out form,,2023-07-11 17:34:06,2023-07-11 17:34:17,10.204s,PASSED
+facility_list.add(form_output[0]),Chrome 114.0.0.0,,,2023-07-11 17:34:17,2023-07-11 17:34:17,0.002s,PASSED
+readmission_list.add(form_output[1]),Chrome 114.0.0.0,,,2023-07-11 17:34:17,2023-07-11 17:34:17,0.001s,PASSED
+program_list.add(form_output[2]),Chrome 114.0.0.0,,,2023-07-11 17:34:17,2023-07-11 17:34:17,0.000s,PASSED
+dates_list.add(form_output[3]),Chrome 114.0.0.0,,,2023-07-11 17:34:17,2023-07-11 17:34:17,0.000s,PASSED
+comment_list.add(form_output[4]),Chrome 114.0.0.0,,,2023-07-11 17:34:17,2023-07-11 17:34:17,0.000s,PASSED
+"click(findTestObject(""Page_Summary/Button_Go to Homepage""))",Chrome 114.0.0.0,,,2023-07-11 17:34:17,2023-07-11 17:34:19,2.744s,PASSED
+"form_output = makeAppointment.MakeAppointment.fillOutForm("""", """", """", ""01/02/2023"", ""comment"")",Chrome 114.0.0.0,Fill out form,,2023-07-11 17:34:19,2023-07-11 17:34:31,11.600s,PASSED
+facility_list.add(form_output[0]),Chrome 114.0.0.0,,,2023-07-11 17:34:31,2023-07-11 17:34:31,0.001s,PASSED
+readmission_list.add(form_output[1]),Chrome 114.0.0.0,,,2023-07-11 17:34:31,2023-07-11 17:34:31,0.000s,PASSED
+program_list.add(form_output[2]),Chrome 114.0.0.0,,,2023-07-11 17:34:31,2023-07-11 17:34:31,0.000s,PASSED
+dates_list.add(form_output[3]),Chrome 114.0.0.0,,,2023-07-11 17:34:31,2023-07-11 17:34:31,0.000s,PASSED
+comment_list.add(form_output[4]),Chrome 114.0.0.0,,,2023-07-11 17:34:31,2023-07-11 17:34:31,0.002s,PASSED
+"click(findTestObject(""Navigation Bar/Icon_Menu""))",Chrome 114.0.0.0,Go to History page,,2023-07-11 17:34:31,2023-07-11 17:34:33,1.958s,PASSED
+"click(findTestObject(""Navigation Bar/Buttons"", [""index"":""3""]))",Chrome 114.0.0.0,,,2023-07-11 17:34:33,2023-07-11 17:34:35,2.327s,PASSED
+driver = getWebDriver(),Chrome 114.0.0.0,,,2023-07-11 17:34:35,2023-07-11 17:34:35,0.019s,PASSED
+"headings = driver.findElements(By.className(""panel-heading""))",Chrome 114.0.0.0,,,2023-07-11 17:34:35,2023-07-11 17:34:37,1.515s,PASSED
+"facility_sum = driver.findElements(By.id(""facility""))",Chrome 114.0.0.0,,,2023-07-11 17:34:37,2023-07-11 17:34:39,2.020s,PASSED
+"readmission_sum = driver.findElements(By.id(""hospital_readmission""))",Chrome 114.0.0.0,,,2023-07-11 17:34:39,2023-07-11 17:34:41,2.012s,PASSED
+"program_sum = driver.findElements(By.id(""program""))",Chrome 114.0.0.0,,,2023-07-11 17:34:41,2023-07-11 17:34:43,1.916s,PASSED
+"comment_sum = driver.findElements(By.id(""comment""))",Chrome 114.0.0.0,,,2023-07-11 17:34:43,2023-07-11 17:34:45,2.014s,PASSED
+for (def index : (0..2)),Chrome 114.0.0.0,,,2023-07-11 17:34:45,2023-07-11 17:34:45,0.493s,PASSED
+closeBrowser(),Chrome 114.0.0.0,,,2023-07-11 17:34:45,2023-07-11 17:34:45,0.084s,PASSED

@@ -1,0 +1,68 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Edited,Chrome 114.0.0.0,,,2023-07-11 17:42:54,2023-07-11 17:47:16,4m - 21.678s,PASSED
+,,,,,,,
+Test Cases/Verify user can book an appointment successfully,Chrome 114.0.0.0,,,2023-07-11 17:42:55,2023-07-11 17:44:15,1m - 20.157s,PASSED
+"openBrowser("""")",Chrome 114.0.0.0,,,2023-07-11 17:42:55,2023-07-11 17:43:03,7.280s,PASSED
+navigateToUrl(URL_homepage),Chrome 114.0.0.0,,,2023-07-11 17:43:03,2023-07-11 17:43:06,3.347s,PASSED
+"click(findTestObject(""Page_Main page/Button_Make Appointment""))",Chrome 114.0.0.0,,,2023-07-11 17:43:06,2023-07-11 17:43:08,1.639s,PASSED
+"logIn.LogIn.logIn(""John Doe"", ""ThisIsNotAPassword"")",Chrome 114.0.0.0,,,2023-07-11 17:43:08,2023-07-11 17:43:43,35.130s,PASSED
+"form_output = makeAppointment.MakeAppointment.fillOutForm(facility, readmission, program, date, comment)",Chrome 114.0.0.0,Fill out form,,2023-07-11 17:43:43,2023-07-11 17:43:51,8.644s,PASSED
+url = getUrl(),Chrome 114.0.0.0,,,2023-07-11 17:43:51,2023-07-11 17:43:51,0.034s,PASSED
+"verifyEqual(url, URL_summary)",Chrome 114.0.0.0,Verify correct URL and summary information,,2023-07-11 17:43:51,2023-07-11 17:43:51,0.032s,PASSED
+"verifyElementText(findTestObject(""Page_Summary/Sumamary lines"", [""id"":""facility""]), form_output[0])",Chrome 114.0.0.0,,,2023-07-11 17:43:51,2023-07-11 17:43:53,1.515s,PASSED
+"verifyElementText(findTestObject(""Page_Summary/Sumamary lines"", [""id"":""hospital_readmission""]), form_output[1])",Chrome 114.0.0.0,,,2023-07-11 17:43:53,2023-07-11 17:43:55,1.921s,PASSED
+"verifyElementText(findTestObject(""Page_Summary/Sumamary lines"", [""id"":""program""]), form_output[2])",Chrome 114.0.0.0,,,2023-07-11 17:43:55,2023-07-11 17:43:57,1.980s,PASSED
+"verifyElementText(findTestObject(""Page_Summary/Sumamary lines"", [""id"":""visit_date""]), form_output[3])",Chrome 114.0.0.0,,,2023-07-11 17:43:57,2023-07-11 17:43:59,2.037s,PASSED
+"verifyElementText(findTestObject(""Page_Summary/Sumamary lines"", [""id"":""comment""]), form_output[4])",Chrome 114.0.0.0,,,2023-07-11 17:43:59,2023-07-11 17:44:01,1.936s,PASSED
+"click(findTestObject(""Navigation Bar/Icon_Menu""))",Chrome 114.0.0.0,Go to History page,,2023-07-11 17:44:01,2023-07-11 17:44:03,2.381s,PASSED
+"click(findTestObject(""Navigation Bar/Buttons"", [""index"":""3""]))",Chrome 114.0.0.0,,,2023-07-11 17:44:03,2023-07-11 17:44:05,2.250s,PASSED
+"verifyElementText(findTestObject(""Page_History page/Headings""), form_output[3])",Chrome 114.0.0.0,,,2023-07-11 17:44:05,2023-07-11 17:44:07,1.371s,PASSED
+"verifyElementText(findTestObject(""Page_History page/Summary lines"", [""id"":""facility""]), form_output[0])",Chrome 114.0.0.0,,,2023-07-11 17:44:07,2023-07-11 17:44:09,2.026s,PASSED
+"verifyElementText(findTestObject(""Page_History page/Summary lines"", [""id"":""hospital_readmission""]), form_output[1])",Chrome 114.0.0.0,,,2023-07-11 17:44:09,2023-07-11 17:44:11,1.994s,PASSED
+"verifyElementText(findTestObject(""Page_History page/Summary lines"", [""id"":""program""]), form_output[2])",Chrome 114.0.0.0,,,2023-07-11 17:44:11,2023-07-11 17:44:13,1.976s,PASSED
+"verifyElementText(findTestObject(""Page_History page/Summary lines"", [""id"":""comment""]), form_output[4])",Chrome 114.0.0.0,,,2023-07-11 17:44:13,2023-07-11 17:44:15,2.083s,PASSED
+closeBrowser(),Chrome 114.0.0.0,,,2023-07-11 17:44:15,2023-07-11 17:44:15,0.117s,PASSED
+,,,,,,,
+Test Cases/Verify user can book an appointment successfully,Chrome 114.0.0.0,,,2023-07-11 17:44:15,2023-07-11 17:45:51,1m - 35.882s,PASSED
+"openBrowser("""")",Chrome 114.0.0.0,,,2023-07-11 17:44:15,2023-07-11 17:44:20,4.562s,PASSED
+navigateToUrl(URL_homepage),Chrome 114.0.0.0,,,2023-07-11 17:44:20,2023-07-11 17:44:23,2.983s,PASSED
+"click(findTestObject(""Page_Main page/Button_Make Appointment""))",Chrome 114.0.0.0,,,2023-07-11 17:44:23,2023-07-11 17:44:24,1.466s,PASSED
+"logIn.LogIn.logIn(""John Doe"", ""ThisIsNotAPassword"")",Chrome 114.0.0.0,,,2023-07-11 17:44:24,2023-07-11 17:45:07,42.559s,PASSED
+"form_output = makeAppointment.MakeAppointment.fillOutForm(facility, readmission, program, date, comment)",Chrome 114.0.0.0,Fill out form,,2023-07-11 17:45:07,2023-07-11 17:45:27,20.778s,PASSED
+url = getUrl(),Chrome 114.0.0.0,,,2023-07-11 17:45:27,2023-07-11 17:45:27,0.011s,PASSED
+"verifyEqual(url, URL_summary)",Chrome 114.0.0.0,Verify correct URL and summary information,,2023-07-11 17:45:27,2023-07-11 17:45:27,0.002s,PASSED
+"verifyElementText(findTestObject(""Page_Summary/Sumamary lines"", [""id"":""facility""]), form_output[0])",Chrome 114.0.0.0,,,2023-07-11 17:45:27,2023-07-11 17:45:29,1.438s,PASSED
+"verifyElementText(findTestObject(""Page_Summary/Sumamary lines"", [""id"":""hospital_readmission""]), form_output[1])",Chrome 114.0.0.0,,,2023-07-11 17:45:29,2023-07-11 17:45:31,1.917s,PASSED
+"verifyElementText(findTestObject(""Page_Summary/Sumamary lines"", [""id"":""program""]), form_output[2])",Chrome 114.0.0.0,,,2023-07-11 17:45:31,2023-07-11 17:45:33,1.974s,PASSED
+"verifyElementText(findTestObject(""Page_Summary/Sumamary lines"", [""id"":""visit_date""]), form_output[3])",Chrome 114.0.0.0,,,2023-07-11 17:45:33,2023-07-11 17:45:35,1.945s,PASSED
+"verifyElementText(findTestObject(""Page_Summary/Sumamary lines"", [""id"":""comment""]), form_output[4])",Chrome 114.0.0.0,,,2023-07-11 17:45:35,2023-07-11 17:45:37,2.191s,PASSED
+"click(findTestObject(""Navigation Bar/Icon_Menu""))",Chrome 114.0.0.0,Go to History page,,2023-07-11 17:45:37,2023-07-11 17:45:39,2.404s,PASSED
+"click(findTestObject(""Navigation Bar/Buttons"", [""index"":""3""]))",Chrome 114.0.0.0,,,2023-07-11 17:45:39,2023-07-11 17:45:41,2.119s,PASSED
+"verifyElementText(findTestObject(""Page_History page/Headings""), form_output[3])",Chrome 114.0.0.0,,,2023-07-11 17:45:41,2023-07-11 17:45:43,1.315s,PASSED
+"verifyElementText(findTestObject(""Page_History page/Summary lines"", [""id"":""facility""]), form_output[0])",Chrome 114.0.0.0,,,2023-07-11 17:45:43,2023-07-11 17:45:45,2.021s,PASSED
+"verifyElementText(findTestObject(""Page_History page/Summary lines"", [""id"":""hospital_readmission""]), form_output[1])",Chrome 114.0.0.0,,,2023-07-11 17:45:45,2023-07-11 17:45:47,2.215s,PASSED
+"verifyElementText(findTestObject(""Page_History page/Summary lines"", [""id"":""program""]), form_output[2])",Chrome 114.0.0.0,,,2023-07-11 17:45:47,2023-07-11 17:45:49,1.803s,PASSED
+"verifyElementText(findTestObject(""Page_History page/Summary lines"", [""id"":""comment""]), form_output[4])",Chrome 114.0.0.0,,,2023-07-11 17:45:49,2023-07-11 17:45:51,2.051s,PASSED
+closeBrowser(),Chrome 114.0.0.0,,,2023-07-11 17:45:51,2023-07-11 17:45:51,0.083s,PASSED
+,,,,,,,
+Test Cases/Verify user can book an appointment successfully,Chrome 114.0.0.0,,,2023-07-11 17:45:51,2023-07-11 17:47:16,1m - 24.877s,PASSED
+"openBrowser("""")",Chrome 114.0.0.0,,,2023-07-11 17:45:51,2023-07-11 17:45:56,4.720s,PASSED
+navigateToUrl(URL_homepage),Chrome 114.0.0.0,,,2023-07-11 17:45:56,2023-07-11 17:45:59,3.266s,PASSED
+"click(findTestObject(""Page_Main page/Button_Make Appointment""))",Chrome 114.0.0.0,,,2023-07-11 17:45:59,2023-07-11 17:46:02,2.698s,PASSED
+"logIn.LogIn.logIn(""John Doe"", ""ThisIsNotAPassword"")",Chrome 114.0.0.0,,,2023-07-11 17:46:02,2023-07-11 17:46:41,38.818s,PASSED
+"form_output = makeAppointment.MakeAppointment.fillOutForm(facility, readmission, program, date, comment)",Chrome 114.0.0.0,Fill out form,,2023-07-11 17:46:41,2023-07-11 17:46:54,13.600s,PASSED
+url = getUrl(),Chrome 114.0.0.0,,,2023-07-11 17:46:54,2023-07-11 17:46:54,0.008s,PASSED
+"verifyEqual(url, URL_summary)",Chrome 114.0.0.0,Verify correct URL and summary information,,2023-07-11 17:46:54,2023-07-11 17:46:54,0.002s,PASSED
+"verifyElementText(findTestObject(""Page_Summary/Sumamary lines"", [""id"":""facility""]), form_output[0])",Chrome 114.0.0.0,,,2023-07-11 17:46:54,2023-07-11 17:46:56,1.597s,PASSED
+"verifyElementText(findTestObject(""Page_Summary/Sumamary lines"", [""id"":""hospital_readmission""]), form_output[1])",Chrome 114.0.0.0,,,2023-07-11 17:46:56,2023-07-11 17:46:58,2.016s,PASSED
+"verifyElementText(findTestObject(""Page_Summary/Sumamary lines"", [""id"":""program""]), form_output[2])",Chrome 114.0.0.0,,,2023-07-11 17:46:58,2023-07-11 17:47:00,1.907s,PASSED
+"verifyElementText(findTestObject(""Page_Summary/Sumamary lines"", [""id"":""visit_date""]), form_output[3])",Chrome 114.0.0.0,,,2023-07-11 17:47:00,2023-07-11 17:47:02,2.045s,PASSED
+"verifyElementText(findTestObject(""Page_Summary/Sumamary lines"", [""id"":""comment""]), form_output[4])",Chrome 114.0.0.0,,,2023-07-11 17:47:02,2023-07-11 17:47:04,1.964s,PASSED
+"click(findTestObject(""Navigation Bar/Icon_Menu""))",Chrome 114.0.0.0,Go to History page,,2023-07-11 17:47:04,2023-07-11 17:47:05,1.481s,PASSED
+"click(findTestObject(""Navigation Bar/Buttons"", [""index"":""3""]))",Chrome 114.0.0.0,,,2023-07-11 17:47:05,2023-07-11 17:47:06,0.970s,PASSED
+"verifyElementText(findTestObject(""Page_History page/Headings""), form_output[3])",Chrome 114.0.0.0,,,2023-07-11 17:47:06,2023-07-11 17:47:08,1.667s,PASSED
+"verifyElementText(findTestObject(""Page_History page/Summary lines"", [""id"":""facility""]), form_output[0])",Chrome 114.0.0.0,,,2023-07-11 17:47:08,2023-07-11 17:47:10,1.993s,PASSED
+"verifyElementText(findTestObject(""Page_History page/Summary lines"", [""id"":""hospital_readmission""]), form_output[1])",Chrome 114.0.0.0,,,2023-07-11 17:47:10,2023-07-11 17:47:12,2.047s,PASSED
+"verifyElementText(findTestObject(""Page_History page/Summary lines"", [""id"":""program""]), form_output[2])",Chrome 114.0.0.0,,,2023-07-11 17:47:12,2023-07-11 17:47:14,2.125s,PASSED
+"verifyElementText(findTestObject(""Page_History page/Summary lines"", [""id"":""comment""]), form_output[4])",Chrome 114.0.0.0,,,2023-07-11 17:47:14,2023-07-11 17:47:16,1.818s,PASSED
+closeBrowser(),Chrome 114.0.0.0,,,2023-07-11 17:47:16,2023-07-11 17:47:16,0.086s,PASSED

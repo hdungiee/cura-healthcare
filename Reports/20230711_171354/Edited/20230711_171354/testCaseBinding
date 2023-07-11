@@ -1,0 +1,6 @@
+{"testCaseName":"Test Cases/Verify user can log in with valid credentiasl","testCaseId":"Test Cases/Verify user can log in with valid credentiasl","iterationVariableName":""}
+{"testCaseName":"Test Cases/Verify user can log out using nav bar","testCaseId":"Test Cases/Verify user can log out using nav bar","iterationVariableName":""}
+{"testCaseName":"Test Cases/Verify user can log out using profile page","testCaseId":"Test Cases/Verify user can log out using profile page","iterationVariableName":""}
+{"testCaseName":"Test Cases/Verify user can book an appointment successfully","testCaseId":"Test Cases/Verify user can book an appointment successfully","iterationVariableName":""}
+{"testCaseName":"Test Cases/Verify user cannot book an appointment with invalid dates","testCaseId":"Test Cases/Verify user cannot book an appointment with invalid dates","iterationVariableName":""}
+{"testCaseName":"Test Cases/Verify user can view correct history page after book appointments","testCaseId":"Test Cases/Verify user can view correct history page after book appointments","iterationVariableName":""}

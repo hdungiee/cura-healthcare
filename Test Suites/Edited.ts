@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Edited</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>3</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>true</rerunImmediately>
+   <testSuiteGuid>557e2b05-2051-4b2c-9508-9c31273fddcd</testSuiteGuid>
+   <testCaseLink>
+      <guid>abfd2c9e-2913-49bb-bab5-04703f027659</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Verify user can log in with valid credentiasl</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>15dd8a20-a1cc-40d5-8191-acf1537971cc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Verify user can log out using nav bar</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>71d7363a-9b61-48f2-a0d3-bef2a85e93ea</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Verify user can log out using profile page</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b41180bc-60cc-4b13-9008-b1a6b6e9e332</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Verify user can book an appointment successfully</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>919e4a6a-6751-4d2c-b72a-9e94a8c080bc</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Verify Successful Appointment</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>919e4a6a-6751-4d2c-b72a-9e94a8c080bc</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>facility</value>
+         <variableId>c6af33f6-fd6e-4505-825a-b1fec0150879</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>919e4a6a-6751-4d2c-b72a-9e94a8c080bc</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>program</value>
+         <variableId>e882f6fb-4a42-4a2a-a719-8bbfcd61ab90</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>919e4a6a-6751-4d2c-b72a-9e94a8c080bc</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>readmission</value>
+         <variableId>7f42739a-b66c-40f8-abf6-e04cc8db87af</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>919e4a6a-6751-4d2c-b72a-9e94a8c080bc</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>date</value>
+         <variableId>d0310ad2-6d87-4f83-9015-b198c65129f7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>919e4a6a-6751-4d2c-b72a-9e94a8c080bc</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>comment</value>
+         <variableId>61f79366-2dcf-4b05-8983-5bacc61bdef9</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b8bb37c4-3d9e-454e-9387-c83526663707</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Verify user cannot book an appointment with invalid dates</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0980706a-bf12-4dad-b512-c1661b6fcaed</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Verify user can view correct history page after book appointments</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+</TestSuiteEntity>

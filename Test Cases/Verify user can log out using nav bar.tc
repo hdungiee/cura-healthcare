@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify user can log out using nav bar</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b4062b11-c6ce-4e18-abc6-8af699943269</testCaseGuid>
+</TestCaseEntity>

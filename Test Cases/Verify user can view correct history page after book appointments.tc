@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify user can view correct history page after book appointments</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e317a05a-b27c-46d3-b816-62f48583aa65</testCaseGuid>
+</TestCaseEntity>

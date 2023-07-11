@@ -40,7 +40,7 @@ dates_list = []
 comment_list = []
 
 'Fill out form'
-form_output = CustomKeywords.'makeAppointment.MakeAppointment.fillOutForm'('Seoul CURA Healthcare Center', 'No', 'None', 
+form_output = CustomKeywords.'makeAppointment.MakeAppointment.fillOutForm'('Seoul CURA Healthcare Center', 'No', '', 
     '08/08/2023', '')
 
 facility_list.add(form_output[0])

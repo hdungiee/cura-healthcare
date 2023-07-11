@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Add 5 Appointments and Verify Correct History</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>c7cb8cb8-ef2d-4133-b141-925278d95d76</testCaseGuid>
-</TestCaseEntity>

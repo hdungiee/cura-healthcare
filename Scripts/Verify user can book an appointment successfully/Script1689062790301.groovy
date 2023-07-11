@@ -33,20 +33,22 @@ url = WebUI.getUrl()
 'Verify correct URL and summary information'
 WebUI.verifyEqual(url, GlobalVariable.URL_summary)
 
-WebUI.verifyElementText(findTestObject('Page_Summary/Sumamary lines', [('id') : 'facility']), form_output[0])
+WebUI.verifyElementText(findTestObject('Page_Summary/Summary lines', [('id') : 'facility']), form_output[0])
 
-WebUI.verifyElementText(findTestObject('Page_Summary/Sumamary lines', [('id') : 'hospital_readmission']), form_output[1])
+WebUI.verifyElementText(findTestObject('Page_Summary/Summary lines', [('id') : 'hospital_readmission']), form_output[1])
 
-WebUI.verifyElementText(findTestObject('Page_Summary/Sumamary lines', [('id') : 'program']), form_output[2])
+WebUI.verifyElementText(findTestObject('Page_Summary/Summary lines', [('id') : 'program']), form_output[2])
 
-WebUI.verifyElementText(findTestObject('Page_Summary/Sumamary lines', [('id') : 'visit_date']), form_output[3])
+WebUI.verifyElementText(findTestObject('Page_Summary/Summary lines', [('id') : 'visit_date']), form_output[3])
 
-WebUI.verifyElementText(findTestObject('Page_Summary/Sumamary lines', [('id') : 'comment']), form_output[4])
+WebUI.verifyElementText(findTestObject('Page_Summary/Summary lines', [('id') : 'comment']), form_output[4])
 
-'Go to History page'
 WebUI.click(findTestObject('Navigation Bar/Icon_Menu'))
 
 WebUI.click(findTestObject('Navigation Bar/Buttons', [('index') : '3']))
+
+'Go to History page'
+//WebUI.verifyEqual(url, GlobalVariable.URL_history)
 
 WebUI.verifyElementText(findTestObject('Page_History page/Headings'), form_output[3])
 

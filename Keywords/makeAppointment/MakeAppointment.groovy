@@ -25,44 +25,25 @@ public class MakeAppointment {
 	@Keyword(keywordObject = "Browser")
 
 	def static fillOutForm(String facility, String readmission, String program, String date, String comment) {
-		WebUI.selectOptionByLabel(findTestObject('Page_Make Appointment/Dropdown_Facility'), facility, true)
+		if (facility != "") {
+			WebUI.selectOptionByLabel(findTestObject('Page_Make Appointment/Dropdown_Facility'), facility, true)
+		}
+		else {
+			facility = "Tokyo CURA Healthcare Center"
+		}
 
 		if (readmission == 'Yes') {
 			WebUI.check(findTestObject('Page_Make Appointment/CheckBox_Apply for readmission'))
 		}
+		else {
+			readmission = "No"
+		}
 
-		switch (program) {
-
-			case 'Medicare':
-				WebUI.check(findTestObject('Page_Make Appointment/input_Medicare_programs'))
-
-				WebUI.verifyElementChecked(findTestObject('Page_Make Appointment/input_Medicare_programs'), 0)
-
-				WebUI.verifyElementNotChecked(findTestObject('Page_Make Appointment/input_Medicaid_programs'), 0)
-
-				WebUI.verifyElementNotChecked(findTestObject('Page_Make Appointment/input_None_programs'), 0)
-
-				break
-			case 'Medicaid':
-				WebUI.check(findTestObject('Page_Make Appointment/input_Medicaid_programs'))
-
-				WebUI.verifyElementChecked(findTestObject('Page_Make Appointment/input_Medicaid_programs'), 0)
-
-				WebUI.verifyElementNotChecked(findTestObject('Page_Make Appointment/input_Medicare_programs'), 0)
-
-				WebUI.verifyElementNotChecked(findTestObject('Page_Make Appointment/input_None_programs'), 0)
-
-				break
-			case 'None':
-				WebUI.check(findTestObject('Page_Make Appointment/input_None_programs'))
-
-				WebUI.verifyElementNotChecked(findTestObject('Page_Make Appointment/input_Medicaid_programs'), 0)
-
-				WebUI.verifyElementNotChecked(findTestObject('Page_Make Appointment/input_Medicare_programs'), 0)
-
-				WebUI.verifyElementChecked(findTestObject('Page_Make Appointment/input_None_programs'), 0)
-
-				break
+		if (program != "") {
+			WebUI.check(findTestObject('Page_Make Appointment/Programs', [('program') : program.toLowerCase()]))
+		}
+		else {
+			program = "Medicare"
 		}
 
 		WebUI.setText(findTestObject('Page_Make Appointment/input_Visit Date (Required)_visit_date'), date)
@@ -70,21 +51,7 @@ public class MakeAppointment {
 		WebUI.setText(findTestObject('Page_Make Appointment/textarea_Comment_comment'), comment)
 
 		WebUI.click(findTestObject('Page_Make Appointment/button_Book Appointment'))
-	}
 
-	@Keyword
-
-	def fillOutFormByRow(Integer index) {
-
-		TestData data = findTestData('Verify Successful Appointment')
-
-		def String facility = data.getValue(1,index)
-		def String readmission = data.getValue(2, index)
-		def String program = data.getValue(3, index)
-		def String date = data.getValue(4, index)
-		def String comment = data.getValue(5, index)
-
-		MakeAppointment.fillOutForm(facility, readmission, program, date, comment)
 
 		return [
 			facility,

@@ -1,11 +1,11 @@
 {
-  "keywordFileContentHash": "977B54E3184FD303570F81BCB63CF37E",
+  "keywordFileContentHash": "A546DE806D0AD2F4B0AB6989609D2160",
   "keywordClasses": [
     {
-      "name": "makeAppointment.MakeAppointment",
+      "name": "domain1.Page_AppointmentPage",
       "keywordMethods": [
         {
-          "name": "fillOutForm",
+          "name": "fillAppointmentForm",
           "parameters": [
             {
               "name": "facility",

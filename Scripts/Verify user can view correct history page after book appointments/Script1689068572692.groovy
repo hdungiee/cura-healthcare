@@ -25,93 +25,27 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.URL_homepage)
 
-WebUI.click(findTestObject('Page_Main page/Button_Make Appointment'))
+CustomKeywords.'domain1.Page_MainPage.goToLogInPage'()
 
-CustomKeywords.'logIn.LogIn.logIn'('John Doe', 'ThisIsNotAPassword')
-
-facility_list = []
-
-readmission_list = []
-
-program_list = []
-
-dates_list = []
-
-comment_list = []
+CustomKeywords.'domain1.Page_LogInPage.logIn'('John Doe', 'ThisIsNotAPassword')
 
 'Fill out form'
-form_output = CustomKeywords.'makeAppointment.MakeAppointment.fillOutForm'('Seoul CURA Healthcare Center', 'No', '', 
-    '08/08/2023', '')
+form_output1 = CustomKeywords.'domain1.Page_AppointmentPage.fillAppointmentForm'('', 'Yes', 'None', '08/06/2023', '')
 
-facility_list.add(form_output[0])
-
-readmission_list.add(form_output[1])
-
-program_list.add(form_output[2])
-
-dates_list.add(form_output[3])
-
-comment_list.add(form_output[4])
-
-WebUI.click(findTestObject('Page_Summary/Button_Go to Homepage'))
+WebUI.click(findTestObject('Page_SummaryPage/Button_Go to Homepage'))
 
 'Fill out form'
-form_output = CustomKeywords.'makeAppointment.MakeAppointment.fillOutForm'('Seoul CURA Healthcare Center', 'No', '', '08/09/2024', 
-    '')
+form_output2 = CustomKeywords.'domain1.Page_AppointmentPage.fillAppointmentForm'('Seoul CURA Healthcare Center', 'No', '', 
+    '09/12/2024', 'comment')
 
-facility_list.add(form_output[0])
-
-readmission_list.add(form_output[1])
-
-program_list.add(form_output[2])
-
-dates_list.add(form_output[3])
-
-comment_list.add(form_output[4])
-
-WebUI.click(findTestObject('Page_Summary/Button_Go to Homepage'))
+WebUI.click(findTestObject('Page_SummaryPage/Button_Go to Homepage'))
 
 'Fill out form'
-form_output = CustomKeywords.'makeAppointment.MakeAppointment.fillOutForm'('', '', '', '01/02/2023', 'comment')
+form_output3 = CustomKeywords.'domain1.Page_AppointmentPage.fillAppointmentForm'('', '', '', '22/03/2021', '')
 
-facility_list.add(form_output[0])
+CustomKeywords.'domain1.NavigationBar.goToPage'('history')
 
-readmission_list.add(form_output[1])
-
-program_list.add(form_output[2])
-
-dates_list.add(form_output[3])
-
-comment_list.add(form_output[4])
-
-'Go to History page'
-WebUI.click(findTestObject('Navigation Bar/Icon_Menu'))
-
-WebUI.click(findTestObject('Navigation Bar/Buttons', [('index') : '3']))
-
-WebDriver driver = DriverFactory.getWebDriver()
-
-def headings = driver.findElements(By.className('panel-heading'))
-
-def facility_sum = driver.findElements(By.id('facility'))
-
-def readmission_sum = driver.findElements(By.id('hospital_readmission'))
-
-def program_sum = driver.findElements(By.id('program'))
-
-def comment_sum = driver.findElements(By.id('comment'))
-
-for (def index : (0..2)) {
-    WebUI.verifyElementText(WebUI.convertWebElementToTestObject(headings[index]), dates_list[index])
-
-    WebUI.verifyElementText(WebUI.convertWebElementToTestObject(facility_sum[index]), facility_list[index])
-
-    WebUI.verifyElementText(WebUI.convertWebElementToTestObject(readmission_sum[index]), readmission_list[index])
-
-    WebUI.verifyElementText(WebUI.convertWebElementToTestObject(program_sum[index]), program_list[index])
-
-    WebUI.verifyElementText(WebUI.convertWebElementToTestObject(comment_sum[index]), comment_list[index])
-}
+CustomKeywords.'domain1.Page_HistoryPage.verifyCorrectHistoryOf3Appointments'(form_output1, form_output2, form_output3)
 
 WebUI.closeBrowser()
 

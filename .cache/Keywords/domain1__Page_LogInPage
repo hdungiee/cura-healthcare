@@ -1,8 +1,8 @@
 {
-  "keywordFileContentHash": "876B0AD07196C2EED670BF570E18061E",
+  "keywordFileContentHash": "64D65880B98C769DBF74DBC4F972A083",
   "keywordClasses": [
     {
-      "name": "logIn.LogIn",
+      "name": "domain1.Page_LogInPage",
       "keywordMethods": [
         {
           "name": "logIn",
@@ -34,6 +34,16 @@
               }
             }
           ],
+          "javadoc": ""
+        },
+        {
+          "name": "verifyLogInSuccessfully",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "verifyLogInUnsuccessfully",
+          "parameters": [],
           "javadoc": ""
         }
       ]

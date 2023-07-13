@@ -1,18 +1,37 @@
 {
-  "keywordFileContentHash": "977B54E3184FD303570F81BCB63CF37E",
+  "keywordFileContentHash": "220B80BBB53074F0FB3D94D296847E51",
   "keywordClasses": [
     {
-      "name": "makeAppointment.MakeAppointment",
+      "name": "domain1.Page_HistoryPage",
       "keywordMethods": [
         {
-          "name": "fillOutForm",
+          "name": "verifyCorrectHistory",
           "parameters": [
             {
-              "name": "facility",
+              "name": "form_output",
               "initialExpression": "",
               "type": {
-                "fullClassName": "java.lang.String",
-                "unresolvedClassName": "String",
+                "fullClassName": "java.util.List",
+                "unresolvedClassName": "List",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "verifyCorrectHistoryOf3Appointments",
+          "parameters": [
+            {
+              "name": "form_output1",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.util.List",
+                "unresolvedClassName": "List",
                 "isArray": false,
                 "isGnericsPlaceHolder": false,
                 "hasImmutableClassName": false,
@@ -21,11 +40,11 @@
               }
             },
             {
-              "name": "readmission",
+              "name": "form_output2",
               "initialExpression": "",
               "type": {
-                "fullClassName": "java.lang.String",
-                "unresolvedClassName": "String",
+                "fullClassName": "java.util.List",
+                "unresolvedClassName": "List",
                 "isArray": false,
                 "isGnericsPlaceHolder": false,
                 "hasImmutableClassName": false,
@@ -34,37 +53,11 @@
               }
             },
             {
-              "name": "program",
+              "name": "form_output3",
               "initialExpression": "",
               "type": {
-                "fullClassName": "java.lang.String",
-                "unresolvedClassName": "String",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": false,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            },
-            {
-              "name": "date",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "java.lang.String",
-                "unresolvedClassName": "String",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": false,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            },
-            {
-              "name": "comment",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "java.lang.String",
-                "unresolvedClassName": "String",
+                "fullClassName": "java.util.List",
+                "unresolvedClassName": "List",
                 "isArray": false,
                 "isGnericsPlaceHolder": false,
                 "hasImmutableClassName": false,

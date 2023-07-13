@@ -5,44 +5,83 @@
 
 import java.lang.String
 
+import java.util.List
 
 
-def static "navigationBar.NavigationBar.goToHome"() {
-    (new navigationBar.NavigationBar()).goToHome()
-}
 
-
-def static "navigationBar.NavigationBar.goToProfile"() {
-    (new navigationBar.NavigationBar()).goToProfile()
-}
-
-
-def static "navigationBar.NavigationBar.goToHistory"() {
-    (new navigationBar.NavigationBar()).goToHistory()
-}
-
-
-def static "navigationBar.NavigationBar.logOut"() {
-    (new navigationBar.NavigationBar()).logOut()
-}
-
-
-def static "logIn.LogIn.logIn"(
+def static "domain1.Page_LogInPage.logIn"(
     	Object username	
      , 	Object password	) {
-    (new logIn.LogIn()).logIn(
+    (new domain1.Page_LogInPage()).logIn(
         	username
          , 	password)
 }
 
 
-def static "makeAppointment.MakeAppointment.fillOutForm"(
+def static "domain1.Page_LogInPage.verifyLogInSuccessfully"() {
+    (new domain1.Page_LogInPage()).verifyLogInSuccessfully()
+}
+
+
+def static "domain1.Page_LogInPage.verifyLogInUnsuccessfully"() {
+    (new domain1.Page_LogInPage()).verifyLogInUnsuccessfully()
+}
+
+
+def static "domain1.Page_MainPage.goToLogInPage"() {
+    (new domain1.Page_MainPage()).goToLogInPage()
+}
+
+
+def static "domain1.Page_MainPage.verifySuccessfulLogOut"() {
+    (new domain1.Page_MainPage()).verifySuccessfulLogOut()
+}
+
+
+def static "domain1.NavigationBar.goToPage"(
+    	String page	) {
+    (new domain1.NavigationBar()).goToPage(
+        	page)
+}
+
+
+def static "domain1.Page_HistoryPage.verifyCorrectHistory"(
+    	List form_output	) {
+    (new domain1.Page_HistoryPage()).verifyCorrectHistory(
+        	form_output)
+}
+
+
+def static "domain1.Page_HistoryPage.verifyCorrectHistoryOf3Appointments"(
+    	List form_output1	
+     , 	List form_output2	
+     , 	List form_output3	) {
+    (new domain1.Page_HistoryPage()).verifyCorrectHistoryOf3Appointments(
+        	form_output1
+         , 	form_output2
+         , 	form_output3)
+}
+
+
+def static "domain1.Page_SummaryPage.verifyCorrectSummary"(
+    	List form_output	) {
+    (new domain1.Page_SummaryPage()).verifyCorrectSummary(
+        	form_output)
+}
+
+
+def static "domain1.Page_SummaryPage.goToHomepage"() {
+    (new domain1.Page_SummaryPage()).goToHomepage()
+}
+
+
+def static "domain1.Page_AppointmentPage.fillAppointmentForm"(
     	String facility	
      , 	String readmission	
      , 	String program	
      , 	String date	
      , 	String comment	) {
-    (new makeAppointment.MakeAppointment()).fillOutForm(
+    (new domain1.Page_AppointmentPage()).fillAppointmentForm(
         	facility
          , 	readmission
          , 	program

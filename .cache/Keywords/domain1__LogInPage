@@ -1,8 +1,8 @@
 {
-  "keywordFileContentHash": "876B0AD07196C2EED670BF570E18061E",
+  "keywordFileContentHash": "BE5CD2105248BF22698DC632FF8009F9",
   "keywordClasses": [
     {
-      "name": "logIn.LogIn",
+      "name": "domain1.LogInPage",
       "keywordMethods": [
         {
           "name": "logIn",
@@ -33,11 +33,10 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

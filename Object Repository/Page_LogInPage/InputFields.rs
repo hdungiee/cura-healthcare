@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Button_Make Appointment</name>
+   <name>InputFields</name>
    <tag></tag>
-   <elementGuidId>8e0b106d-4a29-4706-88f0-9a5992d698ee</elementGuidId>
+   <elementGuidId>7cd38119-4b1a-4af2-98ed-62fe2c29685a</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;btn-make-appointment&quot;]</value>
+         <value>//*[@id=&quot;txt-${id}&quot;]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>a#btn-make-appointment.btn.btn-dark.btn-lg</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

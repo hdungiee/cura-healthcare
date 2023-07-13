@@ -21,54 +21,44 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.URL_homepage)
 
-WebUI.click(findTestObject('Page_Main page/Button_Make Appointment'))
+CustomKeywords.'domain1.Page_MainPage.goToLogInPage'()
 
-CustomKeywords.'logIn.LogIn.logIn'('John Doe', 'ThisIsNotAPassword')
+CustomKeywords.'domain1.Page_LogInPage.logIn'('John Doe', 'ThisIsNotAPassword')
 
 'Case 1: empty date'
-CustomKeywords.'makeAppointment.MakeAppointment.fillOutForm'('', '', '', '', '')
+CustomKeywords.'domain1.Page_AppointmentPage.fillAppointmentForm'('', '', '', '', '')
 
-'Verify cannot book appointment'
-WebUI.verifyEqual(WebUI.getUrl(), GlobalVariable.URL_appointment)
+WebUI.verifyEqual(WebUI.getUrl(), GlobalVariable.URL_appointment, FailureHandling.CONTINUE_ON_FAILURE)
 
-'Go back to appointment page'
-WebUI.click(findTestObject('Page_Main page/Button_Make Appointment'))
+CustomKeywords.'domain1.NavigationBar.goToPage'('home')
 
 'Case 2: string date'
-CustomKeywords.'makeAppointment.MakeAppointment.fillOutForm'('', '', '', 'abcdefjdgeh', '')
+CustomKeywords.'domain1.Page_AppointmentPage.fillAppointmentForm'('', '', '', 'stringdate', '')
 
-'Verify cannot book appointment'
-WebUI.verifyEqual(WebUI.getUrl(), GlobalVariable.URL_appointment)
+WebUI.verifyEqual(WebUI.getUrl(), GlobalVariable.URL_appointment, FailureHandling.CONTINUE_ON_FAILURE)
 
-'Go back to appointment page'
-WebUI.click(findTestObject('Page_Main page/Button_Make Appointment'))
+CustomKeywords.'domain1.NavigationBar.goToPage'('home')
 
 'Case 3: Special character date'
-CustomKeywords.'makeAppointment.MakeAppointment.fillOutForm'('', '', '', '~!@#$%^&*()', '')
+CustomKeywords.'domain1.Page_AppointmentPage.fillAppointmentForm'('', '', '', '~!@#%^&*()', '')
 
-'Verify cannot book appointment'
-WebUI.verifyEqual(WebUI.getUrl(), GlobalVariable.URL_appointment)
+WebUI.verifyEqual(WebUI.getUrl(), GlobalVariable.URL_appointment, FailureHandling.CONTINUE_ON_FAILURE)
 
-'Go back to appointment page'
-WebUI.click(findTestObject('Page_Main page/Button_Make Appointment'))
+CustomKeywords.'domain1.NavigationBar.goToPage'('home')
 
 'Case 4: Date in wrong format 23/07/23'
-CustomKeywords.'makeAppointment.MakeAppointment.fillOutForm'('', '', '', '23/07/23', '')
+CustomKeywords.'domain1.Page_AppointmentPage.fillAppointmentForm'('', '', '', '23/07/23', '')
 
-'Verify cannot book appointment'
-WebUI.verifyEqual(WebUI.getUrl(), GlobalVariable.URL_appointment)
+WebUI.verifyEqual(WebUI.getUrl(), GlobalVariable.URL_appointment, FailureHandling.CONTINUE_ON_FAILURE)
 
-'Go back to appointment page'
-WebUI.click(findTestObject('Page_Main page/Button_Make Appointment'))
+CustomKeywords.'domain1.NavigationBar.goToPage'('home')
 
 'Case 5: Date earlier than today'
-CustomKeywords.'makeAppointment.MakeAppointment.fillOutForm'('', '', '', '07/70/2022', '')
+CustomKeywords.'domain1.Page_AppointmentPage.fillAppointmentForm'('', '', '', '07/09/2022', '')
 
-'Verify cannot book appointment'
 WebUI.verifyEqual(WebUI.getUrl(), GlobalVariable.URL_appointment)
 
-'Go back to appointment page'
-WebUI.click(findTestObject('Page_Main page/Button_Make Appointment'))
+CustomKeywords.'domain1.NavigationBar.goToPage'('home')
 
 WebUI.closeBrowser()
 

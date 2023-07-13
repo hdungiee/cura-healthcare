@@ -21,23 +21,15 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.URL_homepage)
 
-WebUI.click(findTestObject('Page_Main page/Button_Make Appointment'))
+CustomKeywords.'domain1.Page_MainPage.goToLogInPage'()
 
-CustomKeywords.'logIn.LogIn.logIn'('John Doe', 'ThisIsNotAPassword')
+CustomKeywords.'domain1.Page_LogInPage.logIn'('John Doe', 'ThisIsNotAPassword')
 
-WebUI.click(findTestObject('Navigation Bar/Icon_Menu'))
+CustomKeywords.'domain1.NavigationBar.goToPage'('profile')
 
-WebUI.click(findTestObject('Navigation Bar/Buttons', [('index') : '4']))
+WebUI.click(findTestObject('Page_ProfilePage/Button_Log out'))
 
-WebUI.click(findTestObject('Page_Profile/Button_Log out'))
-
-url = WebUI.getUrl()
-
-WebUI.verifyEqual(url, GlobalVariable.URL_homepage)
-
-WebUI.click(findTestObject('Page_Main page/Button_Make Appointment'))
-
-WebUI.verifyTextPresent('Please login to make appointment.', false)
+CustomKeywords.'domain1.Page_MainPage.verifySuccessfulLogOut'()
 
 WebUI.closeBrowser()
 

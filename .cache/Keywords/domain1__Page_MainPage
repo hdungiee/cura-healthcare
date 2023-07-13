@@ -1,0 +1,21 @@
+{
+  "keywordFileContentHash": "F273FA120E80D2AE272E4B52714EE054",
+  "keywordClasses": [
+    {
+      "name": "domain1.Page_MainPage",
+      "keywordMethods": [
+        {
+          "name": "goToLogInPage",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "verifySuccessfulLogOut",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

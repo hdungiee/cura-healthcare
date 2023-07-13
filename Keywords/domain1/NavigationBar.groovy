@@ -1,4 +1,4 @@
-package makeAppointment
+package domain1
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -20,45 +20,27 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
 
-public class MakeAppointment {
-
-	@Keyword(keywordObject = "Browser")
-
-	def static fillOutForm(String facility, String readmission, String program, String date, String comment) {
-		if (facility != "") {
-			WebUI.selectOptionByLabel(findTestObject('Page_Make Appointment/Dropdown_Facility'), facility, true)
+public class NavigationBar {
+	@Keyword
+	def goToPage(String page) {
+		def index = 0
+		if (page.toLowerCase() == 'home') {
+			index = 2
+		}
+		else if (page.toLowerCase() == 'login') {
+			index = 3
+		}
+		else if (page.toLowerCase() == 'history') {
+			index = 3
+		}
+		else if (page.toLowerCase() == 'profile') {
+			index = 4
 		}
 		else {
-			facility = "Tokyo CURA Healthcare Center"
+			index = 5
 		}
 
-		if (readmission == 'Yes') {
-			WebUI.check(findTestObject('Page_Make Appointment/CheckBox_Apply for readmission'))
-		}
-		else {
-			readmission = "No"
-		}
-
-		if (program != "") {
-			WebUI.check(findTestObject('Page_Make Appointment/Programs', [('program') : program.toLowerCase()]))
-		}
-		else {
-			program = "Medicare"
-		}
-
-		WebUI.setText(findTestObject('Page_Make Appointment/input_Visit Date (Required)_visit_date'), date)
-
-		WebUI.setText(findTestObject('Page_Make Appointment/textarea_Comment_comment'), comment)
-
-		WebUI.click(findTestObject('Page_Make Appointment/button_Book Appointment'))
-
-
-		return [
-			facility,
-			readmission,
-			program,
-			date,
-			comment
-		]
+		WebUI.click(findTestObject('Navigation Bar/Icon_Menu'))
+		WebUI.click(findTestObject('Navigation Bar/Buttons', [('index') : index]))
 	}
 }

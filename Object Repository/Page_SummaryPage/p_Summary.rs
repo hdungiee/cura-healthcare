@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Input field _Password</name>
+   <name>p_Summary</name>
    <tag></tag>
-   <elementGuidId>7cd38119-4b1a-4af2-98ed-62fe2c29685a</elementGuidId>
+   <elementGuidId>15efaab1-1869-4b25-a95b-1828ed4f00dd</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;txt-password&quot;]</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;${id}&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

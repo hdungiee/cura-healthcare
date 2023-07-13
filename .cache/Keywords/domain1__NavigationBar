@@ -1,0 +1,30 @@
+{
+  "keywordFileContentHash": "35F3C6E69C2CD9842B7004952B4E7E9D",
+  "keywordClasses": [
+    {
+      "name": "domain1.NavigationBar",
+      "keywordMethods": [
+        {
+          "name": "goToPage",
+          "parameters": [
+            {
+              "name": "page",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

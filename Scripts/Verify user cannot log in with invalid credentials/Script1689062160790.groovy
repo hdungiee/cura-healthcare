@@ -21,70 +21,42 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.URL_homepage)
 
-WebUI.click(findTestObject('Page_Main page/Button_Make Appointment'))
+CustomKeywords.'domain1.Page_MainPage.goToLogInPage'()
 
 'Case 1: no username, no password'
-CustomKeywords.'logIn.LogIn.logIn'('', '')
+CustomKeywords.'domain1.Page_LogInPage.logIn'('', '')
 
-WebUI.click(findTestObject('Page_Log in page/Button_Log in'))
-
-WebUI.verifyEqual(WebUI.getUrl(), GlobalVariable.URL_login)
-
-WebUI.verifyTextPresent('Login failed! Please ensure the username and password are valid.', false)
+CustomKeywords.'domain1.Page_LogInPage.verifyLogInUnsuccessfully'()
 
 'Case 2: no username, right password'
-CustomKeywords.'logIn.LogIn.logIn'('', 'ThisIsNotAPassword')
+CustomKeywords.'domain1.Page_LogInPage.logIn'('', 'ThisIsNotAPassword')
 
-WebUI.click(findTestObject('Page_Log in page/Button_Log in'))
-
-WebUI.verifyEqual(WebUI.getUrl(), GlobalVariable.URL_login)
-
-WebUI.verifyTextPresent('Login failed! Please ensure the username and password are valid.', false)
+CustomKeywords.'domain1.Page_LogInPage.verifyLogInUnsuccessfully'()
 
 'Case 3: right username, no password'
-CustomKeywords.'logIn.LogIn.logIn'('John Doe', '')
+CustomKeywords.'domain1.Page_LogInPage.logIn'('John Doe', '')
 
-WebUI.click(findTestObject('Page_Log in page/Button_Log in'))
-
-WebUI.verifyEqual(WebUI.getUrl(), GlobalVariable.URL_login)
-
-WebUI.verifyTextPresent('Login failed! Please ensure the username and password are valid.', false)
+CustomKeywords.'domain1.Page_LogInPage.verifyLogInUnsuccessfully'()
 
 'Case 4: wrong username, wrong password'
-CustomKeywords.'logIn.LogIn.logIn'('JohnDoe', 'WrongPassword')
+CustomKeywords.'domain1.Page_LogInPage.logIn'('JohnDoe', 'WrongPassword')
 
-WebUI.click(findTestObject('Page_Log in page/Button_Log in'))
-
-WebUI.verifyEqual(WebUI.getUrl(), GlobalVariable.URL_login)
-
-WebUI.verifyTextPresent('Login failed! Please ensure the username and password are valid.', false)
+CustomKeywords.'domain1.Page_LogInPage.verifyLogInUnsuccessfully'()
 
 'Case 5: right username, wrong password'
-CustomKeywords.'logIn.LogIn.logIn'('John Doe', 'WrongPassword')
+CustomKeywords.'domain1.Page_LogInPage.logIn'('John Doe', 'WrongPassword')
 
-WebUI.click(findTestObject('Page_Log in page/Button_Log in'))
-
-WebUI.verifyEqual(WebUI.getUrl(), GlobalVariable.URL_login)
-
-WebUI.verifyTextPresent('Login failed! Please ensure the username and password are valid.', false)
+CustomKeywords.'domain1.Page_LogInPage.verifyLogInUnsuccessfully'()
 
 'Case 6: wrong username, right password'
-CustomKeywords.'logIn.LogIn.logIn'('JohnDoe', 'ThisIsNotAPassword')
+CustomKeywords.'domain1.Page_LogInPage.logIn'('JohnDoe', 'ThisIsNotAPassword')
 
-WebUI.click(findTestObject('Page_Log in page/Button_Log in'))
-
-WebUI.verifyEqual(WebUI.getUrl(), GlobalVariable.URL_login)
-
-WebUI.verifyTextPresent('Login failed! Please ensure the username and password are valid.', false)
+CustomKeywords.'domain1.Page_LogInPage.verifyLogInUnsuccessfully'()
 
 'Case 7: special character'
-CustomKeywords.'logIn.LogIn.logIn'('!@#%^&*()_+', '~!@#%^&*()_+')
+CustomKeywords.'domain1.Page_LogInPage.logIn'('!@#%^&*()_+', '~!@#%^&*()_+')
 
-WebUI.click(findTestObject('Page_Log in page/Button_Log in'))
-
-WebUI.verifyEqual(WebUI.getUrl(), GlobalVariable.URL_login)
-
-WebUI.verifyTextPresent('Login failed! Please ensure the username and password are valid.', false)
+CustomKeywords.'domain1.Page_LogInPage.verifyLogInUnsuccessfully'()
 
 WebUI.closeBrowser()
 

@@ -1,4 +1,4 @@
-package navigationBar
+package domain1
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -20,33 +20,26 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
 
-public class NavigationBar {
-	@Keyword
-	def goToHome() {
-		WebUI.click(findTestObject('Navigation Bar/Icon_Menu'))
+public class Page_SummaryPage {
 
-		WebUI.click(findTestObject('Navigation Bar/Button_Home'))
+	@Keyword
+	def verifyCorrectSummary(List form_output) {
+
+		WebUI.verifyEqual(WebUI.getUrl(), GlobalVariable.URL_summary)
+
+		WebUI.verifyElementText(findTestObject('Page_SummaryPage/p_Summary', [('id') : 'facility']), form_output[0])
+
+		WebUI.verifyElementText(findTestObject('Page_SummaryPage/p_Summary', [('id') : 'hospital_readmission']), form_output[1])
+
+		WebUI.verifyElementText(findTestObject('Page_SummaryPage/p_Summary', [('id') : 'program']), form_output[2])
+
+		WebUI.verifyElementText(findTestObject('Page_SummaryPage/p_Summary', [('id') : 'visit_date']), form_output[3])
+
+		WebUI.verifyElementText(findTestObject('Page_SummaryPage/p_Summary', [('id') : 'comment']), form_output[4])
 	}
 
 	@Keyword
-	def goToProfile() {
-		WebUI.click(findTestObject('Navigation Bar/Icon_Menu'))
-
-		WebUI.click(findTestObject('Navigation Bar/Button_Profile'))
-	}
-
-	@Keyword
-	def goToHistory() {
-		WebUI.click(findTestObject('Navigation Bar/Icon_Menu'))
-
-		WebUI.click(findTestObject('Navigation Bar/Button_History'))
-	}
-
-	@Keyword
-	def logOut() {
-
-		WebUI.click(findTestObject('Navigation Bar/Icon_Menu'))
-
-		WebUI.click(findTestObject('Navigation Bar/Button_Logout'))
+	def goToHomepage() {
+		WebUI.click(findTestObject('Page_SummaryPage/Button_Go to Homepage'))
 	}
 }

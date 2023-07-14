@@ -34,4 +34,29 @@
       <initValue>'https://katalon-demo-cura.herokuapp.com/profile.php#profile'</initValue>
       <name>URL_profile</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Page_AppointmentPage/Dropdown_Facility'</initValue>
+      <name>FIELD_facility</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Page_AppointmentPage/CheckBox_Apply for readmission'</initValue>
+      <name>FIELD_readmission</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Page_AppointmentPage/input_Visit Date (Required)_visite_date'</initValue>
+      <name>FIELD_date</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Page_AppointmentPage/radio_Programs'</initValue>
+      <name>FIELD_program</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'textarea_Comment_comment'</initValue>
+      <name>FIELD_comment</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

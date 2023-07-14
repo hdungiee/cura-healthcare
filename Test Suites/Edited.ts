@@ -23,24 +23,27 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Verify user cannot log in with invalid credentials</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>ca142e65-4209-4770-9c75-f66ccfd6b4bd</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Verify Unsuccessful Log In</testDataId>
+      </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>ca142e65-4209-4770-9c75-f66ccfd6b4bd</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>username</value>
          <variableId>5029f934-58d2-412d-a771-27a46ac30864</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>ca142e65-4209-4770-9c75-f66ccfd6b4bd</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>password</value>
          <variableId>7db8f62d-74ad-43a5-adb5-8cbe214e06cc</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>32fad549-f212-4c6a-8056-b22b51a805d2</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>

@@ -16,17 +16,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import domain1.*
 
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.URL_homepage)
 
-CustomKeywords.'domain1.Page_MainPage.goToLogInPage'()
+Page_MainPage.goToLogInPage()
 
-CustomKeywords.'domain1.Page_LogInPage.logIn'('John Doe', 'ThisIsNotAPassword')
+Page_LogInPage.logIn('John Doe', 'ThisIsNotAPassword')
 
 'Fill out form'
-form_output = CustomKeywords.'domain1.Page_AppointmentPage.fillAppointmentForm'(facility, readmission, program, date, comment)
+
+Page_AppointmentPage.selectFacility('Hongkong CURA Healthcare Center')
+
+form_output = Page_AppointmentPage.getAppointmentFormValue()
 
 CustomKeywords.'domain1.Page_SummaryPage.verifyCorrectSummary'(form_output)
 

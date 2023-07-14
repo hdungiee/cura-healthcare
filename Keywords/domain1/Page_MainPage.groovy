@@ -9,13 +9,12 @@ import internal.GlobalVariable
 
 
 public class Page_MainPage {
-	@Keyword
-	def goToLogInPage() {
+
+	static def goToLogInPage() {
 		WebUI.click(findTestObject('Page_MainPage/Button_MakeAppointment'))
 	}
 
-	@Keyword
-	def verifySuccessfulLogOut() {
+	static def verifySuccessfulLogOut() {
 
 		WebUI.verifyEqual(WebUI.getUrl(), GlobalVariable.URL_homepage)
 

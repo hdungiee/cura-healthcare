@@ -16,20 +16,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import domain1.*
 
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.URL_homepage)
 
-CustomKeywords.'domain1.Page_MainPage.goToLogInPage'()
+Page_MainPage.goToLogInPage()
 
-CustomKeywords.'domain1.Page_LogInPage.logIn'('John Doe', 'ThisIsNotAPassword')
+Page_LogInPage.logIn('John Doe', 'ThisIsNotAPassword')
 
-CustomKeywords.'domain1.NavigationBar.goToPage'('profile')
+NavigationBar.goToPage('profile')
 
-WebUI.click(findTestObject('Page_ProfilePage/Button_Log out'))
+Page_ProfilePage.logOut()
 
-CustomKeywords.'domain1.Page_MainPage.verifySuccessfulLogOut'()
+Page_MainPage.verifySuccessfulLogOut()
 
 WebUI.closeBrowser()
 

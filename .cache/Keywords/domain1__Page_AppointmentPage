@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "A546DE806D0AD2F4B0AB6989609D2160",
+  "keywordFileContentHash": "98E50AF0F4EEC80737F5132B6EE217CA",
   "keywordClasses": [
     {
       "name": "domain1.Page_AppointmentPage",
@@ -72,11 +72,10 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

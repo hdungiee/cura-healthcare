@@ -39,6 +39,31 @@ public class GlobalVariable {
      */
     public static Object URL_profile
      
+    /**
+     * <p></p>
+     */
+    public static Object FIELD_facility
+     
+    /**
+     * <p></p>
+     */
+    public static Object FIELD_readmission
+     
+    /**
+     * <p></p>
+     */
+    public static Object FIELD_date
+     
+    /**
+     * <p></p>
+     */
+    public static Object FIELD_program
+     
+    /**
+     * <p></p>
+     */
+    public static Object FIELD_comment
+     
 
     static {
         try {
@@ -52,6 +77,11 @@ public class GlobalVariable {
             URL_homepage = selectedVariables['URL_homepage']
             URL_history = selectedVariables['URL_history']
             URL_profile = selectedVariables['URL_profile']
+            FIELD_facility = selectedVariables['FIELD_facility']
+            FIELD_readmission = selectedVariables['FIELD_readmission']
+            FIELD_date = selectedVariables['FIELD_date']
+            FIELD_program = selectedVariables['FIELD_program']
+            FIELD_comment = selectedVariables['FIELD_comment']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

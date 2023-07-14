@@ -22,7 +22,7 @@ import internal.GlobalVariable
 
 public class NavigationBar {
 	@Keyword
-	def goToPage(String page) {
+	static def goToPage(String page) {
 		def index = 0
 		if (page.toLowerCase() == 'home') {
 			index = 2

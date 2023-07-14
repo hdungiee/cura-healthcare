@@ -28,16 +28,6 @@ def static "domain1.Page_LogInPage.verifyLogInUnsuccessfully"() {
 }
 
 
-def static "domain1.Page_MainPage.goToLogInPage"() {
-    (new domain1.Page_MainPage()).goToLogInPage()
-}
-
-
-def static "domain1.Page_MainPage.verifySuccessfulLogOut"() {
-    (new domain1.Page_MainPage()).verifySuccessfulLogOut()
-}
-
-
 def static "domain1.NavigationBar.goToPage"(
     	String page	) {
     (new domain1.NavigationBar()).goToPage(

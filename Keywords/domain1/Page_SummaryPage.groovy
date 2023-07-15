@@ -9,8 +9,7 @@ import internal.GlobalVariable
 
 public class Page_SummaryPage {
 
-	@Keyword
-	def verifyCorrectSummary(List form_output) {
+	static def verifyCorrectSummary(List form_output) {
 
 		WebUI.verifyEqual(WebUI.getUrl(), GlobalVariable.URL_summary)
 
@@ -25,8 +24,7 @@ public class Page_SummaryPage {
 		WebUI.verifyElementText(findTestObject('Page_SummaryPage/p_Summary', [('id') : 'comment']), form_output[4])
 	}
 
-	@Keyword
-	def goToHomepage() {
+	static def goToHomepage() {
 		WebUI.click(findTestObject('Page_SummaryPage/Button_Go to Homepage'))
 	}
 }

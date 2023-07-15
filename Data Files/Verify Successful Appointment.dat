@@ -10,7 +10,7 @@
    <dataSourceUrl></dataSourceUrl>
    <driver>InternalData</driver>
    <data>null null null 15%2F02%2F2023 null</data>
-   <data>Tokyo+CURA+Healthcare+Center No Medicaid 07%2F06%2F2023 Readmitted+due+to+complications.</data>
+   <data>Tokyo+CURA+Healthcare+Center null Medicaid 07%2F06%2F2023 Readmitted+due+to+complications.</data>
    <data>Seoul+CURA+Healthcare+Center Yes null 29%2F03%2F2023 null</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>

@@ -1,75 +1,10 @@
 {
-  "keywordFileContentHash": "9D9107BA244C416335D9C3F9768C3755",
+  "keywordFileContentHash": "145A2E907809532F5837EB9ED6197456",
   "keywordClasses": [
     {
       "name": "domain1.Page_HistoryPage",
-      "keywordMethods": [
-        {
-          "name": "verifyCorrectHistory",
-          "parameters": [
-            {
-              "name": "form_output",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "java.util.List",
-                "unresolvedClassName": "List",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": false,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            }
-          ],
-          "javadoc": ""
-        },
-        {
-          "name": "verifyCorrectHistoryOf3Appointments",
-          "parameters": [
-            {
-              "name": "form_output1",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "java.util.List",
-                "unresolvedClassName": "List",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": false,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            },
-            {
-              "name": "form_output2",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "java.util.List",
-                "unresolvedClassName": "List",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": false,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            },
-            {
-              "name": "form_output3",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "java.util.List",
-                "unresolvedClassName": "List",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": false,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            }
-          ],
-          "javadoc": ""
-        }
-      ]
+      "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

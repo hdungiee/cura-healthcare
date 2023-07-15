@@ -3,54 +3,10 @@
  * This class is generated automatically by Katalon Studio and should not be modified or deleted.
  */
 
-import java.lang.String
-
 import java.util.List
 
+import java.lang.String
 
-
-def static "domain1.Page_LogInPage.logIn"(
-    	Object username	
-     , 	Object password	) {
-    (new domain1.Page_LogInPage()).logIn(
-        	username
-         , 	password)
-}
-
-
-def static "domain1.Page_LogInPage.verifyLogInSuccessfully"() {
-    (new domain1.Page_LogInPage()).verifyLogInSuccessfully()
-}
-
-
-def static "domain1.Page_LogInPage.verifyLogInUnsuccessfully"() {
-    (new domain1.Page_LogInPage()).verifyLogInUnsuccessfully()
-}
-
-
-def static "domain1.NavigationBar.goToPage"(
-    	String page	) {
-    (new domain1.NavigationBar()).goToPage(
-        	page)
-}
-
-
-def static "domain1.Page_HistoryPage.verifyCorrectHistory"(
-    	List form_output	) {
-    (new domain1.Page_HistoryPage()).verifyCorrectHistory(
-        	form_output)
-}
-
-
-def static "domain1.Page_HistoryPage.verifyCorrectHistoryOf3Appointments"(
-    	List form_output1	
-     , 	List form_output2	
-     , 	List form_output3	) {
-    (new domain1.Page_HistoryPage()).verifyCorrectHistoryOf3Appointments(
-        	form_output1
-         , 	form_output2
-         , 	form_output3)
-}
 
 
 def static "domain1.Page_SummaryPage.verifyCorrectSummary"(

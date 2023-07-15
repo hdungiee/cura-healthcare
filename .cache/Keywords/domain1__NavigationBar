@@ -1,30 +1,10 @@
 {
-  "keywordFileContentHash": "35F3C6E69C2CD9842B7004952B4E7E9D",
+  "keywordFileContentHash": "360BBFACB1D0DF135E963569AEFF05A9",
   "keywordClasses": [
     {
       "name": "domain1.NavigationBar",
-      "keywordMethods": [
-        {
-          "name": "goToPage",
-          "parameters": [
-            {
-              "name": "page",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "java.lang.String",
-                "unresolvedClassName": "String",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": false,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            }
-          ],
-          "javadoc": ""
-        }
-      ]
+      "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

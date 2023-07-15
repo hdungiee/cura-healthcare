@@ -21,26 +21,27 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class NavigationBar {
-	@Keyword
+
 	static def goToPage(String page) {
-		def index = 0
-		if (page.toLowerCase() == 'home') {
-			index = 2
-		}
-		else if (page.toLowerCase() == 'login') {
-			index = 3
-		}
-		else if (page.toLowerCase() == 'history') {
-			index = 3
-		}
-		else if (page.toLowerCase() == 'profile') {
-			index = 4
-		}
-		else {
-			index = 5
-		}
+
+		//		def index = 0
+		//		if (page.toLowerCase() == 'home') {
+		//			index = 2
+		//		}
+		//		else if (page.toLowerCase() == 'login') {
+		//			index = 3
+		//		}
+		//		else if (page.toLowerCase() == 'history') {
+		//			index = 3
+		//		}
+		//		else if (page.toLowerCase() == 'profile') {
+		//			index = 4
+		//		}
+		//		else {
+		//			index = 5
+		//		}
 
 		WebUI.click(findTestObject('Navigation Bar/Icon_Menu'))
-		WebUI.click(findTestObject('Navigation Bar/Buttons', [('index') : index]))
+		WebUI.click(findTestObject('Navigation Bar/Buttons', [('page') : page]))
 	}
 }

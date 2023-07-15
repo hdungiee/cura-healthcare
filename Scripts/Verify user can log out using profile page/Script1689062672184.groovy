@@ -26,7 +26,7 @@ Page_MainPage.goToLogInPage()
 
 Page_LogInPage.logIn('John Doe', 'ThisIsNotAPassword')
 
-NavigationBar.goToPage('profile')
+NavigationBar.goToPage('Profile')
 
 Page_ProfilePage.logOut()
 

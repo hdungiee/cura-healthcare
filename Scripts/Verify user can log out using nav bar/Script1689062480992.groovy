@@ -11,7 +11,7 @@ Page_MainPage.goToLogInPage()
 
 Page_LogInPage.logIn('John Doe', 'ThisIsNotAPassword')
 
-NavigationBar.goToPage('logout')
+NavigationBar.goToPage('Logout')
 
 Page_MainPage.verifySuccessfulLogOut()
 

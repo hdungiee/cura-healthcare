@@ -1,52 +1,9 @@
 {
-  "keywordFileContentHash": "64D65880B98C769DBF74DBC4F972A083",
+  "keywordFileContentHash": "138D70FF2562805C3FF81102CE6A2C52",
   "keywordClasses": [
     {
       "name": "domain1.Page_LogInPage",
-      "keywordMethods": [
-        {
-          "name": "logIn",
-          "parameters": [
-            {
-              "name": "username",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "java.lang.Object",
-                "unresolvedClassName": "java.lang.Object",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": true,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            },
-            {
-              "name": "password",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "java.lang.Object",
-                "unresolvedClassName": "java.lang.Object",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": true,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            }
-          ],
-          "javadoc": ""
-        },
-        {
-          "name": "verifyLogInSuccessfully",
-          "parameters": [],
-          "javadoc": ""
-        },
-        {
-          "name": "verifyLogInUnsuccessfully",
-          "parameters": [],
-          "javadoc": ""
-        }
-      ]
+      "keywordMethods": []
     }
   ],
   "javadocParsed": true

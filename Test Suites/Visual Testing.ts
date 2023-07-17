@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>POM</name>
+   <name>Visual Testing</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,14 +10,7 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>add3b57b-c0ee-4747-9564-3a8111612e4f</testSuiteGuid>
-   <testCaseLink>
-      <guid>c015375e-2373-4b8f-83d5-bee56640124b</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Verify user cannot book an appointment with invalid dates</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
+   <testSuiteGuid>53ce3dfe-2797-4bf3-ab6f-995d89254a7b</testSuiteGuid>
    <testCaseLink>
       <guid>534a5a7f-de66-4302-9431-04db51d24d5c</guid>
       <isReuseDriver>false</isReuseDriver>

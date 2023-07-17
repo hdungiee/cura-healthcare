@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "360BBFACB1D0DF135E963569AEFF05A9",
+  "keywordFileContentHash": "76BA9DD4DB6670A01D90F099D2DA7D0C",
   "keywordClasses": [
     {
       "name": "domain1.NavigationBar",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

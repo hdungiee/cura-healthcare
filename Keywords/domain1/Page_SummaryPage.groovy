@@ -9,19 +9,25 @@ import internal.GlobalVariable
 
 public class Page_SummaryPage {
 
-	static def verifyCorrectSummary(List form_output) {
+	static def facility_default = "Tokyo CURA Healthcare Center"
+	static def readmission_default = "No"
+	static def program_default = "Medicare"
+	static def comment_default = ""
+
+	//	static def verifyCorrectSummary(String facility = facility_default, String readmission = readmission_default, String program = program_default, String date, String comment = comment_default) {
+	static def verifyCorrectSummary(String facility, String readmission, String program, String date, String comment) {
 
 		WebUI.verifyEqual(WebUI.getUrl(), GlobalVariable.URL_summary)
 
-		WebUI.verifyElementText(findTestObject('Page_SummaryPage/p_Summary', [('id') : 'facility']), form_output[0])
+		WebUI.verifyElementText(findTestObject('Page_SummaryPage/p_Summary', [('id') : 'facility']), facility)
 
-		WebUI.verifyElementText(findTestObject('Page_SummaryPage/p_Summary', [('id') : 'hospital_readmission']), form_output[1])
+		WebUI.verifyElementText(findTestObject('Page_SummaryPage/p_Summary', [('id') : 'hospital_readmission']), readmission)
 
-		WebUI.verifyElementText(findTestObject('Page_SummaryPage/p_Summary', [('id') : 'program']), form_output[2])
+		WebUI.verifyElementText(findTestObject('Page_SummaryPage/p_Summary', [('id') : 'program']), program)
 
-		WebUI.verifyElementText(findTestObject('Page_SummaryPage/p_Summary', [('id') : 'visit_date']), form_output[3])
+		WebUI.verifyElementText(findTestObject('Page_SummaryPage/p_Summary', [('id') : 'visit_date']), date)
 
-		WebUI.verifyElementText(findTestObject('Page_SummaryPage/p_Summary', [('id') : 'comment']), form_output[4])
+		WebUI.verifyElementText(findTestObject('Page_SummaryPage/p_Summary', [('id') : 'comment']), comment)
 	}
 
 	static def goToHomepage() {

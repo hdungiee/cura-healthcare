@@ -3,9 +3,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import domain1.*
 import internal.GlobalVariable
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl(GlobalVariable.URL_homepage)
+WebUI.openBrowser(GlobalVariable.URL_homepage)
 
 Page_MainPage.goToLogInPage()
 

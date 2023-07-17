@@ -18,9 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import domain1.*
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl(GlobalVariable.URL_homepage)
+WebUI.openBrowser(GlobalVariable.URL_homepage)
 
 Page_MainPage.goToLogInPage()
 

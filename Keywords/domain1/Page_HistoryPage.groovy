@@ -13,21 +13,20 @@ import org.openqa.selenium.By as By
 
 public class Page_HistoryPage {
 
-	static def verifyCorrectHistory(List form_output) {
+	static def verifyCorrectHistory(String facility, String readmission, String program, String date, String comment) {
 
-		WebUI.verifyElementText(findTestObject('Page_HistoryPage/Headings'), form_output[3])
+		WebUI.verifyElementText(findTestObject('Page_HistoryPage/Headings'), date)
 
-		WebUI.verifyElementText(findTestObject('Page_HistoryPage/Summary lines', [('id') : 'facility']), form_output[0])
+		WebUI.verifyElementText(findTestObject('Page_HistoryPage/Summary lines', [('id') : 'facility']), facility)
 
-		WebUI.verifyElementText(findTestObject('Page_HistoryPage/Summary lines', [('id') : 'hospital_readmission']), form_output[
-			1])
+		WebUI.verifyElementText(findTestObject('Page_HistoryPage/Summary lines', [('id') : 'hospital_readmission']), readmission)
 
-		WebUI.verifyElementText(findTestObject('Page_HistoryPage/Summary lines', [('id') : 'program']), form_output[2])
+		WebUI.verifyElementText(findTestObject('Page_HistoryPage/Summary lines', [('id') : 'program']), program)
 
-		WebUI.verifyElementText(findTestObject('Page_HistoryPage/Summary lines', [('id') : 'comment']), form_output[4])
+		WebUI.verifyElementText(findTestObject('Page_HistoryPage/Summary lines', [('id') : 'comment']), comment)
 	}
 
-	static def verifyCorrectHistoryCard(Integer index, List form_output){
+	static def verifyCorrectHistoryCard(Integer index, String facility, String readmission, String program, String date, String comment){
 
 		WebDriver driver = DriverFactory.getWebDriver()
 
@@ -41,14 +40,14 @@ public class Page_HistoryPage {
 
 		def comment_sum = driver.findElements(By.id('comment'))
 
-		WebUI.verifyElementText(WebUI.convertWebElementToTestObject(headings[index]), form_output[3])
+		WebUI.verifyElementText(WebUI.convertWebElementToTestObject(headings[index]), date)
 
-		WebUI.verifyElementText(WebUI.convertWebElementToTestObject(facility_sum[index]), form_output[0])
+		WebUI.verifyElementText(WebUI.convertWebElementToTestObject(facility_sum[index]), facility)
 
-		WebUI.verifyElementText(WebUI.convertWebElementToTestObject(readmission_sum[index]), form_output[1])
+		WebUI.verifyElementText(WebUI.convertWebElementToTestObject(readmission_sum[index]), readmission)
 
-		WebUI.verifyElementText(WebUI.convertWebElementToTestObject(program_sum[index]), form_output[2])
+		WebUI.verifyElementText(WebUI.convertWebElementToTestObject(program_sum[index]), program)
 
-		WebUI.verifyElementText(WebUI.convertWebElementToTestObject(comment_sum[index]), form_output[4])
+		WebUI.verifyElementText(WebUI.convertWebElementToTestObject(comment_sum[index]), comment)
 	}
 }

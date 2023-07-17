@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "145A2E907809532F5837EB9ED6197456",
+  "keywordFileContentHash": "9D8D30AF03490FECD3D91FEB0AA22340",
   "keywordClasses": [
     {
       "name": "domain1.Page_HistoryPage",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

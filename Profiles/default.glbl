@@ -59,4 +59,24 @@
       <initValue>'textarea_Comment_comment'</initValue>
       <name>FIELD_comment</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Tokyo CURA Healthcare Center'</initValue>
+      <name>facility_default</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Medicare'</initValue>
+      <name>program_default</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>comment_default</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'No'</initValue>
+      <name>readmission_default</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

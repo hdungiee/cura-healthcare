@@ -1,34 +1,9 @@
 {
-  "keywordFileContentHash": "1E19581BE79ACC4BD1BD098FE4BA5E0A",
+  "keywordFileContentHash": "E37A92C9326EF6BA8CB9D909D9B7BA1E",
   "keywordClasses": [
     {
       "name": "domain1.Page_SummaryPage",
-      "keywordMethods": [
-        {
-          "name": "verifyCorrectSummary",
-          "parameters": [
-            {
-              "name": "form_output",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "java.util.List",
-                "unresolvedClassName": "List",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": false,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            }
-          ],
-          "javadoc": ""
-        },
-        {
-          "name": "goToHomepage",
-          "parameters": [],
-          "javadoc": ""
-        }
-      ]
+      "keywordMethods": []
     }
   ],
   "javadocParsed": true

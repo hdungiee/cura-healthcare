@@ -64,6 +64,26 @@ public class GlobalVariable {
      */
     public static Object FIELD_comment
      
+    /**
+     * <p></p>
+     */
+    public static Object facility_default
+     
+    /**
+     * <p></p>
+     */
+    public static Object program_default
+     
+    /**
+     * <p></p>
+     */
+    public static Object comment_default
+     
+    /**
+     * <p></p>
+     */
+    public static Object readmission_default
+     
 
     static {
         try {
@@ -82,6 +102,10 @@ public class GlobalVariable {
             FIELD_date = selectedVariables['FIELD_date']
             FIELD_program = selectedVariables['FIELD_program']
             FIELD_comment = selectedVariables['FIELD_comment']
+            facility_default = selectedVariables['facility_default']
+            program_default = selectedVariables['program_default']
+            comment_default = selectedVariables['comment_default']
+            readmission_default = selectedVariables['readmission_default']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)
